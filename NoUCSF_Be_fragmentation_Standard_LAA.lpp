@@ -1,10 +1,10 @@
-Version 17.4.0
+Version 17.6.0
 
 {============================= Main Part ======================================}
 [general]
                     File = C:/Users/bigrips/Desktop/LISE_update_2025/BigRIPS_LISE/NoUCSF_Be_fragmentation_Standard_LAA.lpp
                     Date = 20-02-2025
-                    Time = 22:00:30
+                    Time = 22:25:12
            Configuration = C:\Users\inabe\Desktop\laa.lcn
              Optionsfile = A1900_2006.lopt
                    Title = 20240401_Standard-LAA_Other_woCSfile_momOFF_cutNO
@@ -368,6 +368,9 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
 [finger]
              Diffuseness = 0.01                                  ; default 0.01
              Suppression = 1e+12                                 ; default 1e12
+           BeamDumpBlock = Beam_Dump
+         BD_LongDistance = 0                    mm               
+          BD_usePrevious = 1
 
 [MC_options]
                    dXsel = 0
