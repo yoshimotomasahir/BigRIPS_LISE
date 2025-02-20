@@ -1,10 +1,10 @@
-Version 17.10.10
+Version 17.11.16
 
 {============================= Main Part ======================================}
 [general]
                     File = C:/Users/bigrips/Desktop/LISE_update_2025/BigRIPS_LISE/48Ca_Be_fragmentation_Standard_LAA.lpp
                     Date = 20-02-2025
-                    Time = 23:34:55
+                    Time = 23:43:32
            Configuration = C:\Users\inabe\Desktop\laa.lcn
              Optionsfile = A1900_2006.lopt
                    Title = 20240401_Standard-LAA_48Ca_wCSfile_momOFF_cutNO
@@ -438,7 +438,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                       k1 = 13    
                       k2 = 0    
                       b0 = -50    
-                       t = 2   
+                       t = 0   
                    shift = 0
 
 [MC_options]
