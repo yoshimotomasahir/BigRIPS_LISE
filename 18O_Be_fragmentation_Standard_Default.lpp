@@ -1,10 +1,10 @@
-Version 17.7.1
+Version 17.8.0
 
 {============================= Main Part ======================================}
 [general]
                     File = C:/Users/bigrips/Desktop/LISE_update_2025/BigRIPS_LISE/18O_Be_fragmentation_Standard_Default.lpp
                     Date = 20-02-2025
-                    Time = 22:54:51
+                    Time = 23:08:17
            Configuration = C:\Users\inabe\Desktop\laa.lcn
              Optionsfile = A1900_2006.lopt
                    Title = 20240401_Standard-Default_18O_woCSfile_momOFF_cutNO
@@ -236,6 +236,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
        GeomAA_Correction = 0                                     ; 0 - don't use,1 - use -default
           Thermalization = 0
           ThermaTimeCoef = 3e+0                                  ; 2.1e-22 MeV *s/e(t)
+                  Pickup = 0
             AbraExpSlope = 0.363 
                 Friction = 0                                     ; 0 - off,1 - on
           Ev_A_SigmaCoef = 9.6  
