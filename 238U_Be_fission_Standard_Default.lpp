@@ -1,10 +1,10 @@
-Version 17.0.0
+Version 17.4.0
 
 {============================= Main Part ======================================}
 [general]
-                    File = C:/Users/nrhsu/Desktop/20240401/238U_Be_fission_Standard_Default.lpp
-                    Date = 07-03-2024
-                    Time = 19:09:42
+                    File = C:/Users/bigrips/Desktop/LISE_update_2025/BigRIPS_LISE/238U_Be_fission_Standard_Default.lpp
+                    Date = 20-02-2025
+                    Time = 22:04:25
            Configuration = C:\Users\inabe\Desktop\laa.lcn
              Optionsfile = A1900_2006.lopt
                    Title = 20240401_Standard0.6-Default_238U_wCSfile_cutNO
@@ -93,6 +93,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                   K_Morr = 8                    MeV/A            ; E/A=8MeV/A default; D.Morrissey coef.
                K_MorHalf = 8                    MeV/A            ; E/A=8MeV/A default at Afrag=Aproj/2; D.Morrissey coef.
                  AA_fast = 0
+             AA_Modefast = 3
                MethodApf = 2                                     ; Prefragment search method: 0-N/Z direction, 1 -  W*EPAX, 2 -  W*CSgeom,
            ExcitationApf = 1                                     ; Excitation energy for APF search: 0 - dSurface, 1 - dA*Ex
             BarrierShape = 1                                     ; 0-classical, 1-quantum mech.
@@ -230,7 +231,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
            ZdeltaOddEven = 9    
 
 [excitation_energy]
-           AbrasionModel = 0                                     ; 0-Geometrical, 1-exponentional
+           AbrasionModel = 0                                     ; 0-Geometrical, 1-Exponential
        GeomAA_Correction = 0                                     ; 0 - don't use,1 - use -default
           Thermalization = 0
           ThermaTimeCoef = 3e+0                                  ; 2.1e-22 MeV *s/e(t)
@@ -282,7 +283,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
      Shift of TOF for RF = 0                    ns               ; for dE-TOF plot with RF
   Fraction of RF trigger = 1
             UseCondition = 0
-         TKE_calibration = 1,1,0,
+         TKE_calibration = 1,1,0,MeV
 
 [cs_file]
               UserDiffCS = 0                                     ; Number of User Diff CS saved in this file
@@ -317,7 +318,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
             AF_Ex_choice = 0
              BoundaryLow = 40                   MeV              
             BoundaryHigh = 180                  MeV              
-                Velocity = 1                                     ; Calculat fissile nuclei speed
+                Velocity = 1                                     ; Calculat. fissioning nuclei speed
            LowEx_nucleus = 236U 92+                              ; Mass ElementName Charge+ Beam
                  L_CS_Ex = 1.927e+02 23.50 11.24                 ; mb, MeV, Mev
            MidEx_nucleus = 226Th90+                              ; Mass ElementName Charge+ Beam
@@ -9063,10 +9064,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [A1_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 
 {============================= BLOCK S3 - Drift ======================================}
@@ -9144,6 +9145,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                    coef3 = 0e+0                 mm^(-2)          
                    coef4 = 0e+0                 mm^(-3)          
          MatrixElement66 = 1                                     ; d/d matrix, default 1
+                 x_shift = 0.000                mm               
 
 
 {============================= BLOCK M1 - Material ======================================}
@@ -9164,10 +9166,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M1_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M1_ProdTarget]
               ProdTarget = 0
@@ -9191,10 +9193,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M2_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M2_ProdTarget]
               ProdTarget = 0
@@ -9393,10 +9395,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M3_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M3_ProdTarget]
               ProdTarget = 0
@@ -9461,10 +9463,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M4_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M4_ProdTarget]
               ProdTarget = 0
@@ -9487,10 +9489,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M5_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M5_ProdTarget]
               ProdTarget = 0
@@ -9621,10 +9623,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M6_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M6_ProdTarget]
               ProdTarget = 0
@@ -9795,10 +9797,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M7_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M7_ProdTarget]
               ProdTarget = 0
@@ -9822,10 +9824,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M8_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M8_ProdTarget]
               ProdTarget = 0
@@ -9847,10 +9849,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 5,0.3,0.3            ns,mm,mm         ; Time&X&Y space
 
 [M9_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M9_ProdTarget]
               ProdTarget = 0
@@ -9874,10 +9876,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M10_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M10_ProdTarget]
               ProdTarget = 0
@@ -9899,10 +9901,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [A2_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 
 {============================= BLOCK D3 - Dipole ======================================}
@@ -10098,10 +10100,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M11_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M11_ProdTarget]
               ProdTarget = 0
@@ -10300,10 +10302,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M12_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M12_ProdTarget]
               ProdTarget = 0
@@ -10326,10 +10328,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M13_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M13_ProdTarget]
               ProdTarget = 0
@@ -10409,6 +10411,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                    coef3 = 0e+0                 mm^(-2)          
                    coef4 = 0e+0                 mm^(-3)          
          MatrixElement66 = 1                                     ; d/d matrix, default 1
+                 x_shift = 0.000                mm               
 
 
 {============================= BLOCK M14 - Material ======================================}
@@ -10429,10 +10432,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M14_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M14_ProdTarget]
               ProdTarget = 0
@@ -10455,10 +10458,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M15_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M15_ProdTarget]
               ProdTarget = 0
@@ -10480,10 +10483,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [A3_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 
 {============================= BLOCK D5 - Dipole ======================================}
@@ -10679,10 +10682,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M16_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M16_ProdTarget]
               ProdTarget = 0
@@ -10881,10 +10884,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M17_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M17_ProdTarget]
               ProdTarget = 0
@@ -10909,10 +10912,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M18_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M18_ProdTarget]
               ProdTarget = 0
@@ -10936,10 +10939,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M19_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M19_ProdTarget]
               ProdTarget = 0
@@ -10963,10 +10966,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M20_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M20_ProdTarget]
               ProdTarget = 0
@@ -10990,10 +10993,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M21_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M21_ProdTarget]
               ProdTarget = 0
@@ -11018,10 +11021,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M22_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M22_ProdTarget]
               ProdTarget = 0
@@ -11086,10 +11089,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M23_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M23_ProdTarget]
               ProdTarget = 0
@@ -11112,10 +11115,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M24_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M24_ProdTarget]
               ProdTarget = 0
@@ -11137,10 +11140,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M25_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M25_ProdTarget]
               ProdTarget = 0
@@ -11163,10 +11166,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M26_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M26_ProdTarget]
               ProdTarget = 0
@@ -11188,10 +11191,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [A4_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 
 {============================= BLOCK S10 - Drift ======================================}
@@ -11319,10 +11322,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M27_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M27_ProdTarget]
               ProdTarget = 0
@@ -11386,10 +11389,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M28_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M28_ProdTarget]
               ProdTarget = 0
@@ -11413,10 +11416,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M29_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M29_ProdTarget]
               ProdTarget = 0
@@ -11438,10 +11441,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M30_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M30_ProdTarget]
               ProdTarget = 0
@@ -11465,10 +11468,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M31_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M31_ProdTarget]
               ProdTarget = 0
@@ -11599,10 +11602,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M32_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M32_ProdTarget]
               ProdTarget = 0
@@ -11666,10 +11669,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M33_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M33_ProdTarget]
               ProdTarget = 0
@@ -11693,10 +11696,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M34_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M34_ProdTarget]
               ProdTarget = 0
@@ -11825,10 +11828,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [A5_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 
 {============================= BLOCK M35 - Material ======================================}
@@ -11848,10 +11851,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M35_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M35_ProdTarget]
               ProdTarget = 0
@@ -11875,10 +11878,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M36_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M36_ProdTarget]
               ProdTarget = 0
@@ -11902,10 +11905,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M37_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M37_ProdTarget]
               ProdTarget = 0
@@ -11928,10 +11931,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M38_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M38_ProdTarget]
               ProdTarget = 0
@@ -11955,10 +11958,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M39_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M39_ProdTarget]
               ProdTarget = 0
@@ -11982,10 +11985,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M40_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M40_ProdTarget]
               ProdTarget = 0
@@ -12010,10 +12013,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M41_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M41_ProdTarget]
               ProdTarget = 0
@@ -12037,10 +12040,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M42_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M42_ProdTarget]
               ProdTarget = 0
@@ -12065,10 +12068,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M43_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M43_ProdTarget]
               ProdTarget = 0
@@ -12092,10 +12095,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M44_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M44_ProdTarget]
               ProdTarget = 0
@@ -12119,10 +12122,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M45_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M45_ProdTarget]
               ProdTarget = 0
@@ -12147,10 +12150,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M46_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M46_ProdTarget]
               ProdTarget = 0
@@ -12174,10 +12177,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M47_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M47_ProdTarget]
               ProdTarget = 0
@@ -12202,10 +12205,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M48_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M48_ProdTarget]
               ProdTarget = 0
@@ -12230,10 +12233,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M49_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M49_ProdTarget]
               ProdTarget = 0
@@ -12256,10 +12259,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M50_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M50_ProdTarget]
               ProdTarget = 0
@@ -12284,10 +12287,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M51_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M51_ProdTarget]
               ProdTarget = 0
@@ -12312,10 +12315,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M52_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M52_ProdTarget]
               ProdTarget = 0
@@ -12340,10 +12343,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M53_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M53_ProdTarget]
               ProdTarget = 0
@@ -12366,10 +12369,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M54_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M54_ProdTarget]
               ProdTarget = 0
@@ -12394,10 +12397,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M55_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M55_ProdTarget]
               ProdTarget = 0
@@ -12422,10 +12425,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M56_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M56_ProdTarget]
               ProdTarget = 0
@@ -12450,10 +12453,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M57_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M57_ProdTarget]
               ProdTarget = 0
@@ -12477,10 +12480,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M58_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M58_ProdTarget]
               ProdTarget = 0
@@ -12502,10 +12505,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [A6_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 
 {============================= BLOCK M59 - Material ======================================}
@@ -12524,10 +12527,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M59_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M59_ProdTarget]
               ProdTarget = 0
@@ -12551,10 +12554,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M60_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M60_ProdTarget]
               ProdTarget = 0
@@ -12579,10 +12582,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M61_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M61_ProdTarget]
               ProdTarget = 0
@@ -12607,10 +12610,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M62_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M62_ProdTarget]
               ProdTarget = 0
@@ -12633,10 +12636,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M63_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M63_ProdTarget]
               ProdTarget = 0
@@ -12661,10 +12664,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M64_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M64_ProdTarget]
               ProdTarget = 0
@@ -12689,10 +12692,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M65_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M65_ProdTarget]
               ProdTarget = 0
@@ -12717,10 +12720,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M66_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M66_ProdTarget]
               ProdTarget = 0
@@ -12743,10 +12746,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M67_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M67_ProdTarget]
               ProdTarget = 0
@@ -12771,10 +12774,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M68_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M68_ProdTarget]
               ProdTarget = 0
@@ -12799,10 +12802,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M69_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M69_ProdTarget]
               ProdTarget = 0
@@ -12887,10 +12890,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M70_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M70_ProdTarget]
               ProdTarget = 0
@@ -12915,10 +12918,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M71_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M71_ProdTarget]
               ProdTarget = 0
@@ -12942,10 +12945,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M72_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M72_ProdTarget]
               ProdTarget = 0
@@ -12970,10 +12973,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M73_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M73_ProdTarget]
               ProdTarget = 0
@@ -12996,10 +12999,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M74_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M74_ProdTarget]
               ProdTarget = 0
@@ -13024,10 +13027,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M75_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M75_ProdTarget]
               ProdTarget = 0
@@ -13052,10 +13055,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M76_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M76_ProdTarget]
               ProdTarget = 0
@@ -13079,10 +13082,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.5,0.5          ns,mm,mm         ; Time&X&Y space
 
 [M77_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M77_ProdTarget]
               ProdTarget = 0
@@ -13105,10 +13108,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [M78_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 [M78_ProdTarget]
               ProdTarget = 0
@@ -13130,10 +13133,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
              Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
 
 [A7_BlockCalibration]
-                     TOF = 1,1,0,
-                      dE = 1,1,0,
-                       X = 1,1,0,
-                       Y = 1,1,0,
+                     TOF = 1,1,0,ns
+                      dE = 1,1,0,MeV
+                       X = 1,1,0,mm
+                       Y = 1,1,0,mm
 
 
 {============================= Calculations ======================================}
