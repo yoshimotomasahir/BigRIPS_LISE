@@ -1,10 +1,10 @@
-Version 17.9.10
+Version 17.10.10
 
 {============================= Main Part ======================================}
 [general]
                     File = C:/Users/bigrips/Desktop/LISE_update_2025/BigRIPS_LISE/238U_Be_fission_Standard_Default.lpp
                     Date = 20-02-2025
-                    Time = 23:27:42
+                    Time = 23:38:25
            Configuration = C:\Users\inabe\Desktop\laa.lcn
              Optionsfile = A1900_2006.lopt
                    Title = 20240401_Standard0.6-Default_238U_wCSfile_cutNO
@@ -8637,14 +8637,15 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
          BD_LongDistance = 0                    mm               
        BD_distTransverse = 8.34                 mm               
                BD_Center = 125                  mm               
+                 BD_rays = 1000
 
 [dBE]
-                      k0 = 0.001
+                      k0 = 0.001  
                       k1 = 13    
                       k2 = 0    
                       b0 = -50    
                        t = 2   
-                    dS2p = 0
+                   shift = 0
 
 [MC_options]
                    dXsel = 0
