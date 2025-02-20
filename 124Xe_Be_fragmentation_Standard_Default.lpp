@@ -1,10 +1,10 @@
-Version 17.11.16
+Version 17.12
 
 {============================= Main Part ======================================}
 [general]
                     File = C:/Users/bigrips/Desktop/LISE_update_2025/BigRIPS_LISE/124Xe_Be_fragmentation_Standard_Default.lpp
-                    Date = 20-02-2025
-                    Time = 23:50:11
+                    Date = 21-02-2025
+                    Time = 06:36:01
            Configuration = C:\Users\inabe\Desktop\laa.lcn
              Optionsfile = A1900_2006.lopt
                    Title = 20240401_Standard-Default_124Xe_wCSfile_momOFF_cutNO
