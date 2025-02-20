@@ -2,14 +2,14 @@ Version 17.12
 
 {============================= Main Part ======================================}
 [general]
-                    File = C:/Users/bigrips/Desktop/LISE_update_2025/BigRIPS_LISE/70Zn_Be_fragmentation_Standard_LAA.lpp
-                    Date = 21-02-2025
-                    Time = 06:32:50
+                    File = C:/Users/nrhsu/Desktop/TechnicalInfo/20250228/70Zn_Be_fragmentation_Standard_LAA.lpp
+                    Date = 20-02-2025
+                    Time = 09:44:13
            Configuration = C:\Users\inabe\Desktop\laa.lcn
              Optionsfile = A1900_2006.lopt
-                   Title = 20240401_Standard-LAA_70Zn_woCSfile_momOFF_cutNO
-          BlockStructure = DSSASWMMDMSMMSMSSMMMMADMDMMSWMMADMDMMMMMMSMMMMASMSMMAMMDSMMMSSSMMMDMSMMMMMMMMAMSMMSMMMA
-          NumberOfBlocks = 87
+                   Title = 20250228_Standard-LAA_70Zn_woCSfile_momOFF_cutNO
+          BlockStructure = DSSASWMMDMSMMSMSSMMMMADMDMMSWMMADMDSSMMMMMMSMMMMASMSMMAMMDSMMMSSSMMMDMSMMMMMMMMAMSMMSMMMA
+          NumberOfBlocks = 89
 
 [settings]
                    A,Z,Q = 70Zn30+                               ; Mass ElementName Charge+ Beam
@@ -373,18 +373,18 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
 [finger]
              Diffuseness = 0.01                                  ; default 0.01
              Suppression = 1e+12                                 ; default 1e12
-           BeamDumpBlock = Beam_Dump
-          BD_usePrevious = 1
-         BD_LongDistance = 0                    mm               
+           BeamDumpBlock = BTS01b_D1ex
+          BD_usePrevious = 0
+         BD_LongDistance = 616.5                mm               
        BD_distTransverse = 8.34                 mm               
-               BD_Center = 125                  mm               
+               BD_Center = 75                   mm               
                  BD_rays = 1000
 
 [dBE]
-                      k0 = 0.001  
-                      k1 = 13    
+                      k0 = 0.0001 
+                      k1 = 6.276
                       k2 = 0    
-                      b0 = -50    
+                      b0 = -29.2  
                        t = 0   
                    shift = 0
 
@@ -599,7 +599,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
 [D1_DipoleSettings]
-                    Brho = 7.15655              Tm               ; magnetic rigidity
+                    Brho = 7.15657              Tm               ; magnetic rigidity
                    Angle = -30                  degrees          
                   Radius = 6                    m                
 
@@ -662,7 +662,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
 {============================= BLOCK S2 - Drift ======================================}
 
 [S2_General]
-                    Name = Drift 2,0                             ; Name of Block, Constant name 1/0
+                    Name = EBD-F1,1                              ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 3.483                m                ; Length block for optical blocks
                SE_method = 0                                     ; 0: S-block, 1: E-block
@@ -1118,7 +1118,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
 [D2_DipoleSettings]
-                    Brho = 6.74326              Tm               ; magnetic rigidity
+                    Brho = 6.74328              Tm               ; magnetic rigidity
                    Angle = -30                  degrees          
                   Radius = 6                    m                
 
@@ -1261,7 +1261,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
 {============================= BLOCK S5 - Drift ======================================}
 
 [S5_General]
-                    Name = F2-F2.5 drift,1                       ; Name of Block, Constant name 1/0
+                    Name = F2-F2.5,1                             ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 4.4                  m                ; Length block for optical blocks
                SE_method = 0                                     ; 0: S-block, 1: E-block
@@ -1436,7 +1436,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
 {============================= BLOCK S7 - Drift ======================================}
 
 [S7_General]
-                    Name = F2.5-F3 drift,1                       ; Name of Block, Constant name 1/0
+                    Name = F2.5-F3,1                             ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 4.4                  m                ; Length block for optical blocks
                SE_method = 0                                     ; 0: S-block, 1: E-block
@@ -1823,7 +1823,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
 [D3_DipoleSettings]
-                    Brho = 6.69651              Tm               ; magnetic rigidity
+                    Brho = 6.69653              Tm               ; magnetic rigidity
                    Angle = -30                  degrees          
                   Radius = 6                    m                
 
@@ -2025,7 +2025,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
 [D4_DipoleSettings]
-                    Brho = 6.69651              Tm               ; magnetic rigidity
+                    Brho = 6.69653              Tm               ; magnetic rigidity
                    Angle = 30                   degrees          
                   Radius = 6                    m                
 
@@ -2405,7 +2405,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
 [D5_DipoleSettings]
-                    Brho = 6.51211              Tm               ; magnetic rigidity
+                    Brho = 6.51213              Tm               ; magnetic rigidity
                    Angle = 30                   degrees          
                   Radius = 6                    m                
 
@@ -2456,14 +2456,14 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
 [D6_General]
                     Name = D6,1                                  ; Name of Block, Constant name 1/0
                Available = 1
-                  Length = 11.792               m                ; Length block for optical blocks
+                  Length = 10.688               m                ; Length block for optical blocks
                SE_method = 0                                     ; 0: S-block, 1: E-block
              SecondOrder = 1                                     ; Exist - 1, Non - 0
               ThirdOrder = 89                                    ; Number of lines
            CalculateAuto = 1                                     ; 0/1/2  nothing, keep_matrix, keep_field
         RemotePermission = 0
-             Before_Quad = 2                                     ; number of quadrupoles before optic device
-              After_Quad = 2                                     ; number of quadrupoles after  optic device
+             Before_Quad = 0                                     ; number of quadrupoles before optic device
+              After_Quad = 0                                     ; number of quadrupoles after  optic device
              QB_DontDraw = 0
              QA_DontDraw = 0
                      ZmQ = 0                                     ;  Z - Q  = charge state settings
@@ -2478,126 +2478,126 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
          ApplyForMethods = 1, 1                                  ; Distribution, Ellipse
 
 [D6_optics]
-                    row1 = -6.89690e-01,-2.02000e-01,+0.00000e+00,+0.00000e+00,+0.00000e+00,-1.59568e+01
-                    row2 = +8.50700e-02,-1.42500e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.96819e+00
-                    row3 = +0.00000e+00,+0.00000e+00,-3.37870e-01,-7.88700e-01,+0.00000e+00,+0.00000e+00
-                    row4 = +0.00000e+00,+0.00000e+00,-1.26930e-01,-3.25600e+00,+0.00000e+00,+0.00000e+00
-                    row5 = +0.00000e+00,+2.31360e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,-1.42200e+00
+                    row1 = -7.83613e-01,+1.37120e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,-1.81297e+01
+                    row2 = +8.50705e-02,-1.42500e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.96819e+00
+                    row3 = +0.00000e+00,+0.00000e+00,-1.97740e-01,+2.80592e+00,+0.00000e+00,+0.00000e+00
+                    row4 = +0.00000e+00,+0.00000e+00,-1.26931e-01,-3.25600e+00,+0.00000e+00,+0.00000e+00
+                    row5 = -1.57483e-09,+2.31360e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,-1.42196e+00
                     row6 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00
 
 [D6_optics2]
-                   row11 = +5.24535e-04,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
-                   row12 = +4.39871e-03,+1.28859e-02,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
-                   row13 = +0.00000e+00,+0.00000e+00,-1.33245e-03,+0.00000e+00,+0.00000e+00,+0.00000e+00
-                   row14 = +0.00000e+00,+0.00000e+00,-6.06388e-03,-7.07737e-03,+0.00000e+00,+0.00000e+00
-                   row16 = -7.37344e-03,+9.97476e-02,+0.00000e+00,+0.00000e+00,+0.00000e+00,-8.42424e-02
+                   row11 = +8.36493e-04,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
+                   row12 = +7.57337e-03,+2.01222e-02,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
+                   row13 = +0.00000e+00,+0.00000e+00,-2.22439e-03,+0.00000e+00,+0.00000e+00,+0.00000e+00
+                   row14 = +0.00000e+00,+0.00000e+00,-9.94930e-03,-1.05742e-02,+0.00000e+00,+0.00000e+00
+                   row16 = +1.26389e-03,+9.90414e-02,+0.00000e+00,+0.00000e+00,+0.00000e+00,+2.49865e-02
                    row21 = -2.82571e-04,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                    row22 = -2.87559e-03,-6.55467e-03,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                    row23 = +0.00000e+00,+0.00000e+00,+8.07913e-04,+0.00000e+00,+0.00000e+00,+0.00000e+00
                    row24 = +0.00000e+00,+0.00000e+00,+3.51940e-03,+3.16744e-03,+0.00000e+00,+0.00000e+00
                    row26 = -7.82366e-03,+6.39684e-04,+0.00000e+00,+0.00000e+00,+0.00000e+00,-9.89392e-02
-                   row33 = +5.43200e-05,+9.27450e-05,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
-                   row34 = +4.38203e-04,+1.28487e-04,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
-                   row36 = +0.00000e+00,+0.00000e+00,-2.85367e-03,+2.28558e-01,+0.00000e+00,+0.00000e+00
+                   row33 = -2.86885e-03,-1.34206e-02,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
+                   row34 = -5.98924e-03,-3.04824e-02,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
+                   row36 = +0.00000e+00,+0.00000e+00,+1.54304e-02,+1.46085e-01,+0.00000e+00,+0.00000e+00
                    row43 = +2.64780e-03,+1.22403e-02,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                    row44 = +5.82196e-03,+2.77273e-02,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                    row46 = +0.00000e+00,+0.00000e+00,-1.65616e-02,+7.47043e-02,+0.00000e+00,+0.00000e+00
-                   row51 = +7.58301e-05,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
-                   row52 = +4.63264e-03,+6.78477e-04,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
-                   row53 = +0.00000e+00,+0.00000e+00,-1.31004e-03,+0.00000e+00,+0.00000e+00,+0.00000e+00
-                   row54 = +0.00000e+00,+0.00000e+00,-4.89951e-03,-3.92086e-02,+0.00000e+00,+0.00000e+00
-                   row56 = +2.11854e-04,+2.28925e-02,+0.00000e+00,+0.00000e+00,+0.00000e+00,-5.33247e-02
+                   row51 = +7.98249e-05,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
+                   row52 = +4.49880e-03,+1.79938e-03,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
+                   row53 = +0.00000e+00,+0.00000e+00,-1.30114e-03,+0.00000e+00,+0.00000e+00,+0.00000e+00
+                   row54 = +0.00000e+00,+0.00000e+00,-4.44325e-03,-3.33565e-02,+0.00000e+00,+0.00000e+00
+                   row56 = +3.96702e-04,+1.97962e-02,+0.00000e+00,+0.00000e+00,+0.00000e+00,-5.11864e-02
 
 [D6_optics3]
-                Line0000 = 3; 0;  0 0 0 0 0 0  +3.68710e-07
-                Line0001 = 3; 1;  0 0 0 0 0 0  +4.97170e-07
-                Line0002 = 3; 4;  0 0 0 0 0 0  -9.58590e-11
-                Line0003 = 3; 0;  0 0 1 0 0 0  -1.13930e-05
+                Line0000 = 3; 0;  0 0 0 0 0 0  -1.80162e-07
+                Line0001 = 3; 1;  0 0 0 0 0 0  +4.97168e-07
+                Line0002 = 3; 4;  0 0 0 0 0 0  -2.66343e-08
+                Line0003 = 3; 0;  0 0 1 0 0 0  -1.00363e-05
                 Line0004 = 3; 1;  0 0 1 0 0 0  -1.22870e-06
-                Line0005 = 3; 4;  0 0 1 0 0 0  -7.20850e-08
-                Line0006 = 3; 2;  0 0 2 0 0 0  +3.30040e-07
-                Line0007 = 3; 3;  0 0 2 0 0 0  +3.91730e-06
-                Line0008 = 3; 2;  0 0 3 0 0 0  -3.00040e-05
-                Line0009 = 3; 3;  0 0 3 0 0 0  -7.81700e-06
-                Line0010 = 3; 0;  0 0 5 0 0 0  +6.80170e-05
-                Line0011 = 3; 1;  0 0 5 0 0 0  +1.54480e-05
-                Line0012 = 3; 4;  0 0 5 0 0 0  +1.73720e-05
-                Line0013 = 3; 0;  0 1 1 0 0 0  +6.44090e-05
+                Line0005 = 3; 4;  0 0 1 0 0 0  +1.02386e-07
+                Line0006 = 3; 2;  0 0 2 0 0 0  -3.99462e-06
+                Line0007 = 3; 3;  0 0 2 0 0 0  +3.91726e-06
+                Line0008 = 3; 2;  0 0 3 0 0 0  -2.13741e-05
+                Line0009 = 3; 3;  0 0 3 0 0 0  -7.81698e-06
+                Line0010 = 3; 0;  0 0 5 0 0 0  +5.09622e-05
+                Line0011 = 3; 1;  0 0 5 0 0 0  +1.54479e-05
+                Line0012 = 3; 4;  0 0 5 0 0 0  +1.60227e-05
+                Line0013 = 3; 0;  0 1 1 0 0 0  +4.66484e-05
                 Line0014 = 3; 1;  0 1 1 0 0 0  +1.60870e-05
-                Line0015 = 3; 4;  0 1 1 0 0 0  -1.89830e-05
-                Line0016 = 3; 2;  0 1 2 0 0 0  -2.03830e-06
-                Line0017 = 3; 3;  0 1 2 0 0 0  +1.15470e-05
-                Line0018 = 3; 2;  0 1 3 0 0 0  +2.81160e-04
-                Line0019 = 3; 3;  0 1 3 0 0 0  +1.41760e-04
-                Line0020 = 3; 0;  0 1 5 0 0 0  -2.46470e-04
-                Line0021 = 3; 1;  0 1 5 0 0 0  -7.89940e-05
-                Line0022 = 3; 4;  0 1 5 0 0 0  +3.52830e-05
-                Line0023 = 3; 0;  0 2 2 0 0 0  -8.18570e-07
-                Line0024 = 3; 1;  0 2 2 0 0 0  +2.09720e-06
-                Line0025 = 3; 4;  0 2 2 0 0 0  -4.71220e-06
-                Line0026 = 3; 0;  0 2 3 0 0 0  -5.47640e-06
-                Line0027 = 3; 1;  0 2 3 0 0 0  +5.71530e-06
-                Line0028 = 3; 4;  0 2 3 0 0 0  +4.40360e-05
-                Line0029 = 3; 2;  0 2 5 0 0 0  -1.96650e-04
-                Line0030 = 3; 3;  0 2 5 0 0 0  -8.10620e-05
-                Line0031 = 3; 0;  0 3 3 0 0 0  +3.03960e-04
-                Line0032 = 3; 1;  0 3 3 0 0 0  +9.46980e-05
-                Line0033 = 3; 4;  0 3 3 0 0 0  +1.15110e-04
-                Line0034 = 3; 2;  0 3 5 0 0 0  -1.81550e-03
-                Line0035 = 3; 3;  0 3 5 0 0 0  -7.83540e-04
-                Line0036 = 3; 0;  0 5 5 0 0 0  +1.39290e-03
-                Line0037 = 3; 1;  0 5 5 0 0 0  +4.54840e-04
-                Line0038 = 3; 4;  0 5 5 0 0 0  +7.29080e-05
-                Line0039 = 3; 0;  1 1 1 0 0 0  -1.47170e-04
-                Line0040 = 3; 1;  1 1 1 0 0 0  -1.74350e-05
-                Line0041 = 3; 4;  1 1 1 0 0 0  -6.27510e-05
-                Line0042 = 3; 2;  1 1 2 0 0 0  +5.98780e-06
-                Line0043 = 3; 3;  1 1 2 0 0 0  +1.92240e-05
-                Line0044 = 3; 2;  1 1 3 0 0 0  -8.90990e-04
-                Line0045 = 3; 3;  1 1 3 0 0 0  -3.46120e-04
-                Line0046 = 3; 0;  1 1 5 0 0 0  +1.84970e-03
-                Line0047 = 3; 1;  1 1 5 0 0 0  +4.47220e-04
-                Line0048 = 3; 4;  1 1 5 0 0 0  +1.13880e-04
-                Line0049 = 3; 0;  1 2 2 0 0 0  -5.89270e-06
-                Line0050 = 3; 1;  1 2 2 0 0 0  +3.62860e-06
-                Line0051 = 3; 4;  1 2 2 0 0 0  -8.86980e-07
-                Line0052 = 3; 0;  1 2 3 0 0 0  +4.37980e-07
-                Line0053 = 3; 1;  1 2 3 0 0 0  +2.10200e-05
-                Line0054 = 3; 4;  1 2 3 0 0 0  +2.82090e-04
-                Line0055 = 3; 2;  1 2 5 0 0 0  -1.01800e-03
-                Line0056 = 3; 3;  1 2 5 0 0 0  -5.53030e-04
-                Line0057 = 3; 0;  1 3 3 0 0 0  -1.88790e-03
-                Line0058 = 3; 1;  1 3 3 0 0 0  -3.57860e-04
-                Line0059 = 3; 4;  1 3 3 0 0 0  +6.32440e-04
-                Line0060 = 3; 2;  1 3 5 0 0 0  +4.38440e-03
-                Line0061 = 3; 3;  1 3 5 0 0 0  +1.68770e-03
-                Line0062 = 3; 0;  1 5 5 0 0 0  -5.48520e-03
-                Line0063 = 3; 1;  1 5 5 0 0 0  -9.51900e-04
-                Line0064 = 3; 4;  1 5 5 0 0 0  -2.02200e-04
-                Line0065 = 3; 2;  2 2 2 0 0 0  +4.19870e-07
-                Line0066 = 3; 3;  2 2 2 0 0 0  +4.05640e-06
-                Line0067 = 3; 2;  2 2 3 0 0 0  +1.73330e-06
-                Line0068 = 3; 3;  2 2 3 0 0 0  +1.80890e-05
-                Line0069 = 3; 0;  2 2 5 0 0 0  -5.06500e-05
-                Line0070 = 3; 1;  2 2 5 0 0 0  -1.44180e-05
-                Line0071 = 3; 4;  2 2 5 0 0 0  -6.93480e-06
-                Line0072 = 3; 2;  2 3 3 0 0 0  +5.09810e-05
-                Line0073 = 3; 3;  2 3 3 0 0 0  +5.17030e-05
-                Line0074 = 3; 0;  2 3 5 0 0 0  -3.25040e-04
-                Line0075 = 3; 1;  2 3 5 0 0 0  -1.01390e-04
-                Line0076 = 3; 4;  2 3 5 0 0 0  -3.83620e-04
-                Line0077 = 3; 2;  2 5 5 0 0 0  +1.40300e-03
-                Line0078 = 3; 3;  2 5 5 0 0 0  +9.20040e-04
-                Line0079 = 3; 2;  3 3 3 0 0 0  -2.27430e-03
-                Line0080 = 3; 3;  3 3 3 0 0 0  -9.80890e-04
-                Line0081 = 3; 0;  3 3 5 0 0 0  +6.81520e-03
-                Line0082 = 3; 1;  3 3 5 0 0 0  +1.95250e-03
-                Line0083 = 3; 4;  3 3 5 0 0 0  +4.60860e-04
-                Line0084 = 3; 2;  3 5 5 0 0 0  -1.73040e-02
-                Line0085 = 3; 3;  3 5 5 0 0 0  -7.30710e-03
-                Line0086 = 3; 0;  5 5 5 0 0 0  +1.11850e-02
-                Line0087 = 3; 1;  5 5 5 0 0 0  +4.18870e-03
-                Line0088 = 3; 4;  5 5 5 0 0 0  +1.30870e-03
+                Line0015 = 3; 4;  0 1 1 0 0 0  -1.50750e-05
+                Line0016 = 3; 2;  0 1 2 0 0 0  -1.47860e-05
+                Line0017 = 3; 3;  0 1 2 0 0 0  +1.15468e-05
+                Line0018 = 3; 2;  0 1 3 0 0 0  +1.24666e-04
+                Line0019 = 3; 3;  0 1 3 0 0 0  +1.41756e-04
+                Line0020 = 3; 0;  0 1 5 0 0 0  -1.59259e-04
+                Line0021 = 3; 1;  0 1 5 0 0 0  -7.89942e-05
+                Line0022 = 3; 4;  0 1 5 0 0 0  +4.14031e-05
+                Line0023 = 3; 0;  0 2 2 0 0 0  -3.13389e-06
+                Line0024 = 3; 1;  0 2 2 0 0 0  +2.09721e-06
+                Line0025 = 3; 4;  0 2 2 0 0 0  -5.00736e-06
+                Line0026 = 3; 0;  0 2 3 0 0 0  -1.17861e-05
+                Line0027 = 3; 1;  0 2 3 0 0 0  +5.71535e-06
+                Line0028 = 3; 4;  0 2 3 0 0 0  +3.40327e-05
+                Line0029 = 3; 2;  0 2 5 0 0 0  -1.07155e-04
+                Line0030 = 3; 3;  0 2 5 0 0 0  -8.10621e-05
+                Line0031 = 3; 0;  0 3 3 0 0 0  +1.99417e-04
+                Line0032 = 3; 1;  0 3 3 0 0 0  +9.46982e-05
+                Line0033 = 3; 4;  0 3 3 0 0 0  +9.44766e-05
+                Line0034 = 3; 2;  0 3 5 0 0 0  -9.50477e-04
+                Line0035 = 3; 3;  0 3 5 0 0 0  -7.83537e-04
+                Line0036 = 3; 0;  0 5 5 0 0 0  +8.90760e-04
+                Line0037 = 3; 1;  0 5 5 0 0 0  +4.54843e-04
+                Line0038 = 3; 4;  0 5 5 0 0 0  +4.66160e-05
+                Line0039 = 3; 0;  1 1 1 0 0 0  -1.27924e-04
+                Line0040 = 3; 1;  1 1 1 0 0 0  -1.74345e-05
+                Line0041 = 3; 4;  1 1 1 0 0 0  -5.24390e-05
+                Line0042 = 3; 2;  1 1 2 0 0 0  -1.52352e-05
+                Line0043 = 3; 3;  1 1 2 0 0 0  +1.92237e-05
+                Line0044 = 3; 2;  1 1 3 0 0 0  -5.08871e-04
+                Line0045 = 3; 3;  1 1 3 0 0 0  -3.46123e-04
+                Line0046 = 3; 0;  1 1 5 0 0 0  +1.35600e-03
+                Line0047 = 3; 1;  1 1 5 0 0 0  +4.47224e-04
+                Line0048 = 3; 4;  1 1 5 0 0 0  +9.86257e-05
+                Line0049 = 3; 0;  1 2 2 0 0 0  -9.89875e-06
+                Line0050 = 3; 1;  1 2 2 0 0 0  +3.62865e-06
+                Line0051 = 3; 4;  1 2 2 0 0 0  -3.87325e-06
+                Line0052 = 3; 0;  1 2 3 0 0 0  -2.27683e-05
+                Line0053 = 3; 1;  1 2 3 0 0 0  +2.10202e-05
+                Line0054 = 3; 4;  1 2 3 0 0 0  +2.28663e-04
+                Line0055 = 3; 2;  1 2 5 0 0 0  -4.07502e-04
+                Line0056 = 3; 3;  1 2 5 0 0 0  -5.53027e-04
+                Line0057 = 3; 0;  1 3 3 0 0 0  -1.49285e-03
+                Line0058 = 3; 1;  1 3 3 0 0 0  -3.57855e-04
+                Line0059 = 3; 4;  1 3 3 0 0 0  +5.27792e-04
+                Line0060 = 3; 2;  1 3 5 0 0 0  +2.52125e-03
+                Line0061 = 3; 3;  1 3 5 0 0 0  +1.68767e-03
+                Line0062 = 3; 0;  1 5 5 0 0 0  -4.43431e-03
+                Line0063 = 3; 1;  1 5 5 0 0 0  -9.51899e-04
+                Line0064 = 3; 4;  1 5 5 0 0 0  -4.51553e-05
+                Line0065 = 3; 2;  2 2 2 0 0 0  -4.05836e-06
+                Line0066 = 3; 3;  2 2 2 0 0 0  +4.05637e-06
+                Line0067 = 3; 2;  2 2 3 0 0 0  -1.82365e-05
+                Line0068 = 3; 3;  2 2 3 0 0 0  +1.80885e-05
+                Line0069 = 3; 0;  2 2 5 0 0 0  -3.47326e-05
+                Line0070 = 3; 1;  2 2 5 0 0 0  -1.44182e-05
+                Line0071 = 3; 4;  2 2 5 0 0 0  -2.85844e-06
+                Line0072 = 3; 2;  2 3 3 0 0 0  -6.09901e-06
+                Line0073 = 3; 3;  2 3 3 0 0 0  +5.17027e-05
+                Line0074 = 3; 0;  2 3 5 0 0 0  -2.13102e-04
+                Line0075 = 3; 1;  2 3 5 0 0 0  -1.01393e-04
+                Line0076 = 3; 4;  2 3 5 0 0 0  -3.26908e-04
+                Line0077 = 3; 2;  2 5 5 0 0 0  +3.87318e-04
+                Line0078 = 3; 3;  2 5 5 0 0 0  +9.20042e-04
+                Line0079 = 3; 2;  3 3 3 0 0 0  -1.19138e-03
+                Line0080 = 3; 3;  3 3 3 0 0 0  -9.80893e-04
+                Line0081 = 3; 0;  3 3 5 0 0 0  +4.65964e-03
+                Line0082 = 3; 1;  3 3 5 0 0 0  +1.95246e-03
+                Line0083 = 3; 4;  3 3 5 0 0 0  +1.99206e-04
+                Line0084 = 3; 2;  3 5 5 0 0 0  -9.23658e-03
+                Line0085 = 3; 3;  3 5 5 0 0 0  -7.30709e-03
+                Line0086 = 3; 0;  5 5 5 0 0 0  +6.56028e-03
+                Line0087 = 3; 1;  5 5 5 0 0 0  +4.18865e-03
+                Line0088 = 3; 4;  5 5 5 0 0 0  +1.09369e-03
 
 [D6_AngAcceptance]
                    X-Use = 0
@@ -2607,7 +2607,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
 [D6_DipoleSettings]
-                    Brho = 6.51211              Tm               ; magnetic rigidity
+                    Brho = 6.51213              Tm               ; magnetic rigidity
                    Angle = -30                  degrees          
                   Radius = 6                    m                
 
@@ -2624,6 +2624,92 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
               Beta2angle = 0                    deg              ; code 2.0 - exit
           UseFringeField = 1                                     ; Entrance Use 1/0
           UseExitFringeF = 1                                     ; Exit Use 1/0
+
+
+{============================= BLOCK S9 - Drift ======================================}
+
+[S9_General]
+                    Name = uF7 slit,1                            ; Name of Block, Constant name 1/0
+               Available = 1
+                  Length = 0                    m                ; Length block for optical blocks
+               SE_method = 0                                     ; 0: S-block, 1: E-block
+             SecondOrder = 0                                     ; Exist - 1, Non - 0
+              ThirdOrder = 0                                     ; Number of lines
+           CalculateAuto = 1                                     ; 0/1/2  nothing, keep_matrix, keep_field
+        RemotePermission = 1
+
+[S9_slits]
+              SlitsShape = 0                                     ; 0-slits, 1-ellipse
+           ApertureShape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 1,1,0                                 ; Use 1/0, Show 1/0, UseApp 1/0
+                  X_size = 0,-110.00,-110.0,110.00,110.0         ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0,0                                 ; Use 1/0, Show 1/0, UseApp 1/0
+                  Y_size = 1,-20.00,-100.0,20.00,100.0           ; joint,Bottom,B-limit,Top,T-limit
+         ApplyForMethods = 1, 1                                  ; Distribution, Ellipse
+
+[S9_optics]
+                    row1 = +1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
+                    row2 = +0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
+                    row3 = +0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
+                    row4 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00
+                    row5 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00
+                    row6 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00
+
+[S9_AngAcceptance]
+                   X-Use = 0
+                 X-Value = 1000                 mrad             ; acceptance
+                   Y-Use = 0
+                 Y-Value = 1000                 mrad             ; acceptance
+                   Shape = 1                                     ; 0 - rectangle, 1- ellipse
+
+[S9_DriftSettings]
+                    Mode = 0                                     ; 4-finger, E-Quad 3, M-Quad 2, Stand 1, Beamline 0
+              ShowLength = 0                                     ; I 3 / B 2 / Brho 1 / Length 0
+
+
+{============================= BLOCK S10 - Drift ======================================}
+
+[S10_General]
+                    Name = uF7-F7 drift,1                        ; Name of Block, Constant name 1/0
+               Available = 1
+                  Length = 1.104                m                ; Length block for optical blocks
+               SE_method = 0                                     ; 0: S-block, 1: E-block
+             SecondOrder = 1                                     ; Exist - 1, Non - 0
+              ThirdOrder = 0                                     ; Number of lines
+           CalculateAuto = 1                                     ; 0/1/2  nothing, keep_matrix, keep_field
+        RemotePermission = 1
+
+[S10_slits]
+              SlitsShape = 0                                     ; 0-slits, 1-ellipse
+           ApertureShape = 1                                     ; 0-slits, 1-ellipse
+                X_action = 0,0,1                                 ; Use 1/0, Show 1/0, UseApp 1/0
+                  X_size = 1,-20.00,-100.0,20.00,100.0           ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0,1                                 ; Use 1/0, Show 1/0, UseApp 1/0
+                  Y_size = 1,-20.00,-100.0,20.00,100.0           ; joint,Bottom,B-limit,Top,T-limit
+         ApplyForMethods = 1, 1                                  ; Distribution, Ellipse
+
+[S10_optics]
+                    row1 = +1.00000e+00,+1.10400e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
+                    row2 = +0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
+                    row3 = +0.00000e+00,+0.00000e+00,+1.00000e+00,+1.10400e+00,+0.00000e+00,+0.00000e+00
+                    row4 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00
+                    row5 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00
+                    row6 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00
+
+[S10_optics2]
+                   row52 = +0.00000e+00,-5.52000e-04,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
+                   row54 = +0.00000e+00,+0.00000e+00,+0.00000e+00,-5.52000e-04,+0.00000e+00,+0.00000e+00
+
+[S10_AngAcceptance]
+                   X-Use = 0
+                 X-Value = 1000                 mrad             ; acceptance
+                   Y-Use = 0
+                 Y-Value = 1000                 mrad             ; acceptance
+                   Shape = 1                                     ; 0 - rectangle, 1- ellipse
+
+[S10_DriftSettings]
+                    Mode = 0                                     ; 4-finger, E-Quad 3, M-Quad 2, Stand 1, Beamline 0
+              ShowLength = 0                                     ; I 3 / B 2 / Brho 1 / Length 0
 
 
 {============================= BLOCK M17 - Material ======================================}
@@ -2684,7 +2770,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
 {============================= BLOCK M19 - Material ======================================}
 
 [M19_General]
-                    Name = F7IC GAS,1                            ; Name of Block, Constant name 1/0
+                    Name = F7IC P10GAS,1                         ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 0                    m                ; Length block for optical blocks
 
@@ -2711,7 +2797,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
 {============================= BLOCK M20 - Material ======================================}
 
 [M20_General]
-                    Name = F7IC GAS MC,1                         ; Name of Block, Constant name 1/0
+                    Name = F7IC P10GAS MC,1                      ; Name of Block, Constant name 1/0
                Available = 0
                   Length = 0                    m                ; Length block for optical blocks
 
@@ -2790,9 +2876,9 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
               ProdTarget = 0
 
 
-{============================= BLOCK S9 - Drift ======================================}
+{============================= BLOCK S11 - Drift ======================================}
 
-[S9_General]
+[S11_General]
                     Name = F7 slit,1                             ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 0                    m                ; Length block for optical blocks
@@ -2802,7 +2888,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
            CalculateAuto = 1                                     ; 0/1/2  nothing, keep_matrix, keep_field
         RemotePermission = 1
 
-[S9_slits]
+[S11_slits]
               SlitsShape = 0                                     ; 0-slits, 1-ellipse
            ApertureShape = 0                                     ; 0-slits, 1-ellipse
                 X_action = 1,1,0                                 ; Use 1/0, Show 1/0, UseApp 1/0
@@ -2811,7 +2897,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                   Y_size = 0,-110.00,-110.0,110.00,110.0         ; joint,Bottom,B-limit,Top,T-limit
          ApplyForMethods = 1, 1                                  ; Distribution, Ellipse
 
-[S9_optics]
+[S11_optics]
                     row1 = +1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row2 = +0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row3 = +0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
@@ -2819,14 +2905,14 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                     row5 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00
                     row6 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00
 
-[S9_AngAcceptance]
+[S11_AngAcceptance]
                    X-Use = 0
                  X-Value = 1000                 mrad             ; acceptance
                    Y-Use = 0
                  Y-Value = 1000                 mrad             ; acceptance
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
-[S9_DriftSettings]
+[S11_DriftSettings]
                     Mode = 0                                     ; 4-finger, E-Quad 3, M-Quad 2, Stand 1, Beamline 0
               ShowLength = 0                                     ; I 3 / B 2 / Brho 1 / Length 0
 
@@ -2957,10 +3043,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                        Y = 1,1,0,mm
 
 
-{============================= BLOCK S10 - Drift ======================================}
+{============================= BLOCK S12 - Drift ======================================}
 
-[S10_General]
-                    Name = F7-F8 drift,1                         ; Name of Block, Constant name 1/0
+[S12_General]
+                    Name = F7-F8,1                               ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 11.3                 m                ; Length block for optical blocks
                SE_method = 0                                     ; 0: S-block, 1: E-block
@@ -2969,7 +3055,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
            CalculateAuto = 1                                     ; 0/1/2  nothing, keep_matrix, keep_field
         RemotePermission = 1
 
-[S10_slits]
+[S12_slits]
               SlitsShape = 1                                     ; 0-slits, 1-ellipse
            ApertureShape = 1                                     ; 0-slits, 1-ellipse
                 X_action = 0,0,0                                 ; Use 1/0, Show 1/0, UseApp 1/0
@@ -2978,7 +3064,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                   Y_size = 1,-120.00,-120.0,120.00,120.0         ; joint,Bottom,B-limit,Top,T-limit
          ApplyForMethods = 1, 1                                  ; Distribution, Ellipse
 
-[S10_optics]
+[S12_optics]
                     row1 = -1.10000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row2 = +0.00000e+00,-9.09090e-01,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row3 = +0.00000e+00,+0.00000e+00,-1.20000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
@@ -2986,7 +3072,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                     row5 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00
                     row6 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00
 
-[S10_optics2]
+[S12_optics2]
                    row16 = -2.09222e-03,+1.05095e-01,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                    row26 = -6.95456e-03,+1.72911e-03,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                    row36 = +0.00000e+00,+0.00000e+00,+7.22974e-03,+1.36427e-01,+0.00000e+00,+0.00000e+00
@@ -2996,7 +3082,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                    row53 = +0.00000e+00,+0.00000e+00,-1.02005e-03,+0.00000e+00,+0.00000e+00,+0.00000e+00
                    row54 = +0.00000e+00,+0.00000e+00,-6.02478e-04,-5.68445e-03,+0.00000e+00,+0.00000e+00
 
-[S10_optics3]
+[S12_optics3]
                 Line0000 = 3; 0;  0 0 0 0 0 0  +2.55760e-07
                 Line0001 = 3; 1;  0 0 0 0 0 0  +5.12910e-07
                 Line0002 = 3; 0;  0 0 1 0 0 0  -1.14230e-05
@@ -3052,14 +3138,14 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                 Line0052 = 3; 2;  3 5 5 0 0 0  +9.54270e-04
                 Line0053 = 3; 3;  3 5 5 0 0 0  +1.01170e-03
 
-[S10_AngAcceptance]
+[S12_AngAcceptance]
                    X-Use = 0
                  X-Value = 1000                 mrad             ; acceptance
                    Y-Use = 0
                  Y-Value = 1000                 mrad             ; acceptance
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
-[S10_DriftSettings]
+[S12_DriftSettings]
                     Mode = 0                                     ; 4-finger, E-Quad 3, M-Quad 2, Stand 1, Beamline 0
               ShowLength = 1                                     ; I 3 / B 2 / Brho 1 / Length 0
 
@@ -3091,9 +3177,9 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
               ProdTarget = 0
 
 
-{============================= BLOCK S11 - Drift ======================================}
+{============================= BLOCK S13 - Drift ======================================}
 
-[S11_General]
+[S13_General]
                     Name = F8 slit,1                             ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 0                    m                ; Length block for optical blocks
@@ -3103,7 +3189,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
            CalculateAuto = 1                                     ; 0/1/2  nothing, keep_matrix, keep_field
         RemotePermission = 1
 
-[S11_slits]
+[S13_slits]
               SlitsShape = 0                                     ; 0-slits, 1-ellipse
            ApertureShape = 0                                     ; 0-slits, 1-ellipse
                 X_action = 1,1,0                                 ; Use 1/0, Show 1/0, UseApp 1/0
@@ -3112,7 +3198,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                   Y_size = 1,-120.00,-120.0,120.00,120.0         ; joint,Bottom,B-limit,Top,T-limit
          ApplyForMethods = 1, 1                                  ; Distribution, Ellipse
 
-[S11_optics]
+[S13_optics]
                     row1 = +1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row2 = +0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row3 = +0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
@@ -3120,14 +3206,14 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                     row5 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00
                     row6 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00
 
-[S11_AngAcceptance]
+[S13_AngAcceptance]
                    X-Use = 0
                  X-Value = 1000                 mrad             ; acceptance
                    Y-Use = 0
                  Y-Value = 1000                 mrad             ; acceptance
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
-[S11_DriftSettings]
+[S13_DriftSettings]
                     Mode = 0                                     ; 4-finger, E-Quad 3, M-Quad 2, Stand 1, Beamline 0
               ShowLength = 0                                     ; I 3 / B 2 / Brho 1 / Length 0
 
@@ -3434,9 +3520,9 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
           UseExitFringeF = 1                                     ; Exit Use 1/0
 
 
-{============================= BLOCK S12 - Drift ======================================}
+{============================= BLOCK S14 - Drift ======================================}
 
-[S12_General]
+[S14_General]
                     Name = F9 Slit,1                             ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 0                    m                ; Length block for optical blocks
@@ -3446,7 +3532,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
            CalculateAuto = 1                                     ; 0/1/2  nothing, keep_matrix, keep_field
         RemotePermission = 1
 
-[S12_slits]
+[S14_slits]
               SlitsShape = 0                                     ; 0-slits, 1-ellipse
            ApertureShape = 0                                     ; 0-slits, 1-ellipse
                 X_action = 1,1,0                                 ; Use 1/0, Show 1/0, UseApp 1/0
@@ -3455,7 +3541,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                   Y_size = 1,-120.00,-120.0,120.00,120.0         ; joint,Bottom,B-limit,Top,T-limit
          ApplyForMethods = 1, 1                                  ; Distribution, Ellipse
 
-[S12_optics]
+[S14_optics]
                     row1 = +1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row2 = +0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row3 = +0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
@@ -3463,14 +3549,14 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                     row5 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00
                     row6 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00
 
-[S12_AngAcceptance]
+[S14_AngAcceptance]
                    X-Use = 0
                  X-Value = 1000                 mrad             ; acceptance
                    Y-Use = 0
                  Y-Value = 1000                 mrad             ; acceptance
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
-[S12_DriftSettings]
+[S14_DriftSettings]
                     Mode = 0                                     ; 4-finger, E-Quad 3, M-Quad 2, Stand 1, Beamline 0
               ShowLength = 0                                     ; I 3 / B 2 / Brho 1 / Length 0
 
@@ -3555,10 +3641,10 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
               ProdTarget = 0
 
 
-{============================= BLOCK S13 - Drift ======================================}
+{============================= BLOCK S15 - Drift ======================================}
 
-[S13_General]
-                    Name = F9-F9.5 drift,1                       ; Name of Block, Constant name 1/0
+[S15_General]
+                    Name = F9-F9.5,1                             ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 5.7                  m                ; Length block for optical blocks
                SE_method = 0                                     ; 0: S-block, 1: E-block
@@ -3567,7 +3653,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
            CalculateAuto = 1                                     ; 0/1/2  nothing, keep_matrix, keep_field
         RemotePermission = 1
 
-[S13_slits]
+[S15_slits]
               SlitsShape = 1                                     ; 0-slits, 1-ellipse
            ApertureShape = 1                                     ; 0-slits, 1-ellipse
                 X_action = 0,0,0                                 ; Use 1/0, Show 1/0, UseApp 1/0
@@ -3576,7 +3662,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                   Y_size = 1,-120.00,-120.0,120.00,120.0         ; joint,Bottom,B-limit,Top,T-limit
          ApplyForMethods = 1, 1                                  ; Distribution, Ellipse
 
-[S13_optics]
+[S15_optics]
                     row1 = +1.00000e-10,+3.74520e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row2 = -2.67010e-01,+1.00000e-10,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row3 = +0.00000e+00,+0.00000e+00,+1.55900e-03,+2.52860e+00,+0.00000e+00,+0.00000e+00
@@ -3584,7 +3670,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                     row5 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00
                     row6 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00
 
-[S13_optics2]
+[S15_optics2]
                    row11 = +7.77496e-05,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                    row12 = +1.07929e-03,+3.77685e-03,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                    row13 = +0.00000e+00,+0.00000e+00,-2.23598e-04,+0.00000e+00,+0.00000e+00,+0.00000e+00
@@ -3606,7 +3692,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                    row53 = +0.00000e+00,+0.00000e+00,-5.21663e-04,+0.00000e+00,+0.00000e+00,+0.00000e+00
                    row54 = +0.00000e+00,+0.00000e+00,-1.72604e-03,-3.33499e-03,+0.00000e+00,+0.00000e+00
 
-[S13_optics3]
+[S15_optics3]
                 Line0000 = 3; 0;  0 0 0 0 0 0  -9.98830e-07
                 Line0001 = 3; 1;  0 0 0 0 0 0  -1.86380e-07
                 Line0002 = 3; 4;  0 0 0 0 0 0  +1.93970e-08
@@ -3692,22 +3778,22 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                 Line0082 = 3; 2;  3 5 5 0 0 0  -1.11310e-03
                 Line0083 = 3; 3;  3 5 5 0 0 0  -4.57770e-04
 
-[S13_AngAcceptance]
+[S15_AngAcceptance]
                    X-Use = 0
                  X-Value = 1000                 mrad             ; acceptance
                    Y-Use = 0
                  Y-Value = 1000                 mrad             ; acceptance
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
-[S13_DriftSettings]
+[S15_DriftSettings]
                     Mode = 0                                     ; 4-finger, E-Quad 3, M-Quad 2, Stand 1, Beamline 0
               ShowLength = 1                                     ; I 3 / B 2 / Brho 1 / Length 0
 
 
-{============================= BLOCK S14 - Drift ======================================}
+{============================= BLOCK S16 - Drift ======================================}
 
-[S14_General]
-                    Name = F9.5-F10 drift,1                      ; Name of Block, Constant name 1/0
+[S16_General]
+                    Name = F9.5-F10,1                            ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 5.7                  m                ; Length block for optical blocks
                SE_method = 0                                     ; 0: S-block, 1: E-block
@@ -3716,7 +3802,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
            CalculateAuto = 1                                     ; 0/1/2  nothing, keep_matrix, keep_field
         RemotePermission = 1
 
-[S14_slits]
+[S16_slits]
               SlitsShape = 1                                     ; 0-slits, 1-ellipse
            ApertureShape = 1                                     ; 0-slits, 1-ellipse
                 X_action = 0,0,0                                 ; Use 1/0, Show 1/0, UseApp 1/0
@@ -3725,7 +3811,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                   Y_size = 1,-120.00,-120.0,120.00,120.0         ; joint,Bottom,B-limit,Top,T-limit
          ApplyForMethods = 1, 1                                  ; Distribution, Ellipse
 
-[S14_optics]
+[S16_optics]
                     row1 = +1.00000e-10,+3.74520e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row2 = -2.67010e-01,+1.00000e-10,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row3 = +0.00000e+00,+0.00000e+00,+1.00000e-10,+2.52860e+00,+0.00000e+00,+0.00000e+00
@@ -3733,7 +3819,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                     row5 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00
                     row6 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00
 
-[S14_optics2]
+[S16_optics2]
                    row11 = -5.07365e-04,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                    row12 = -2.01692e-03,-2.02107e-03,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                    row13 = +0.00000e+00,+0.00000e+00,+6.53385e-04,+0.00000e+00,+0.00000e+00,+0.00000e+00
@@ -3755,7 +3841,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                    row53 = +0.00000e+00,+0.00000e+00,-5.21597e-04,+0.00000e+00,+0.00000e+00,+0.00000e+00
                    row54 = +0.00000e+00,+0.00000e+00,-1.72193e-03,-3.32862e-03,+0.00000e+00,+0.00000e+00
 
-[S14_optics3]
+[S16_optics3]
                 Line0000 = 3; 0;  0 0 0 0 0 0  -9.92140e-07
                 Line0001 = 3; 1;  0 0 0 0 0 0  -1.85530e-07
                 Line0002 = 3; 4;  0 0 0 0 0 0  -1.03510e-07
@@ -3841,21 +3927,21 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                 Line0082 = 3; 2;  3 5 5 0 0 0  -1.11310e-03
                 Line0083 = 3; 3;  3 5 5 0 0 0  -4.57450e-04
 
-[S14_AngAcceptance]
+[S16_AngAcceptance]
                    X-Use = 0
                  X-Value = 1000                 mrad             ; acceptance
                    Y-Use = 0
                  Y-Value = 1000                 mrad             ; acceptance
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
-[S14_DriftSettings]
+[S16_DriftSettings]
                     Mode = 0                                     ; 4-finger, E-Quad 3, M-Quad 2, Stand 1, Beamline 0
               ShowLength = 1                                     ; I 3 / B 2 / Brho 1 / Length 0
 
 
-{============================= BLOCK S15 - Drift ======================================}
+{============================= BLOCK S17 - Drift ======================================}
 
-[S15_General]
+[S17_General]
                     Name = F10 slit,1                            ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 0                    m                ; Length block for optical blocks
@@ -3865,7 +3951,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
            CalculateAuto = 1                                     ; 0/1/2  nothing, keep_matrix, keep_field
         RemotePermission = 1
 
-[S15_slits]
+[S17_slits]
               SlitsShape = 0                                     ; 0-slits, 1-ellipse
            ApertureShape = 0                                     ; 0-slits, 1-ellipse
                 X_action = 1,1,0                                 ; Use 1/0, Show 1/0, UseApp 1/0
@@ -3874,7 +3960,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                   Y_size = 1,-120.00,-120.0,120.00,120.0         ; joint,Bottom,B-limit,Top,T-limit
          ApplyForMethods = 1, 1                                  ; Distribution, Ellipse
 
-[S15_optics]
+[S17_optics]
                     row1 = +1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row2 = +0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row3 = +0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
@@ -3882,14 +3968,14 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                     row5 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00
                     row6 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00
 
-[S15_AngAcceptance]
+[S17_AngAcceptance]
                    X-Use = 0
                  X-Value = 1000                 mrad             ; acceptance
                    Y-Use = 0
                  Y-Value = 1000                 mrad             ; acceptance
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
-[S15_DriftSettings]
+[S17_DriftSettings]
                     Mode = 0                                     ; 4-finger, E-Quad 3, M-Quad 2, Stand 1, Beamline 0
               ShowLength = 0                                     ; I 3 / B 2 / Brho 1 / Length 0
 
@@ -4176,9 +4262,9 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
               ProdTarget = 0
 
 
-{============================= BLOCK S16 - Drift ======================================}
+{============================= BLOCK S18 - Drift ======================================}
 
-[S16_General]
+[S18_General]
                     Name = F11 slit,1                            ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 0                    m                ; Length block for optical blocks
@@ -4188,7 +4274,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
            CalculateAuto = 1                                     ; 0/1/2  nothing, keep_matrix, keep_field
         RemotePermission = 1
 
-[S16_slits]
+[S18_slits]
               SlitsShape = 0                                     ; 0-slits, 1-ellipse
            ApertureShape = 0                                     ; 0-slits, 1-ellipse
                 X_action = 1,1,0                                 ; Use 1/0, Show 1/0, UseApp 1/0
@@ -4197,7 +4283,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                   Y_size = 1,-120.00,-120.0,120.00,120.0         ; joint,Bottom,B-limit,Top,T-limit
          ApplyForMethods = 1, 1                                  ; Distribution, Ellipse
 
-[S16_optics]
+[S18_optics]
                     row1 = +1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row2 = +0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row3 = +0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
@@ -4205,14 +4291,14 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                     row5 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00
                     row6 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00
 
-[S16_AngAcceptance]
+[S18_AngAcceptance]
                    X-Use = 0
                  X-Value = 1000                 mrad             ; acceptance
                    Y-Use = 0
                  Y-Value = 1000                 mrad             ; acceptance
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
-[S16_DriftSettings]
+[S18_DriftSettings]
                     Mode = 0                                     ; 4-finger, E-Quad 3, M-Quad 2, Stand 1, Beamline 0
               ShowLength = 0                                     ; I 3 / B 2 / Brho 1 / Length 0
 
@@ -4329,7 +4415,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
 {============================= BLOCK M43 - Material ======================================}
 
 [M43_General]
-                    Name = F11IC gas ,1                          ; Name of Block, Constant name 1/0
+                    Name = F11IC P10GAS,1                        ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 0                    m                ; Length block for optical blocks
 
@@ -4356,7 +4442,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
 {============================= BLOCK M44 - Material ======================================}
 
 [M44_General]
-                    Name = F11IC gas MC,1                        ; Name of Block, Constant name 1/0
+                    Name = F11IC P10GAS MC,1                     ; Name of Block, Constant name 1/0
                Available = 0
                   Length = 0                    m                ; Length block for optical blocks
 
@@ -4484,9 +4570,9 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
               ProdTarget = 0
 
 
-{============================= BLOCK S17 - Drift ======================================}
+{============================= BLOCK S19 - Drift ======================================}
 
-[S17_General]
+[S19_General]
                     Name = Drift after F11,1                     ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 0.3                  m                ; Length block for optical blocks
@@ -4496,7 +4582,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
            CalculateAuto = 1                                     ; 0/1/2  nothing, keep_matrix, keep_field
         RemotePermission = 1
 
-[S17_slits]
+[S19_slits]
               SlitsShape = 1                                     ; 0-slits, 1-ellipse
            ApertureShape = 1                                     ; 0-slits, 1-ellipse
                 X_action = 0,0,0                                 ; Use 1/0, Show 1/0, UseApp 1/0
@@ -4505,7 +4591,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                   Y_size = 1,-120.00,-120.0,120.00,120.0         ; joint,Bottom,B-limit,Top,T-limit
          ApplyForMethods = 1, 1                                  ; Distribution, Ellipse
 
-[S17_optics]
+[S19_optics]
                     row1 = +1.00000e+00,+3.00000e-01,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row2 = +0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row3 = +0.00000e+00,+0.00000e+00,+1.00000e+00,+3.00000e-01,+0.00000e+00,+0.00000e+00
@@ -4513,14 +4599,14 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                     row5 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00
                     row6 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00
 
-[S17_AngAcceptance]
+[S19_AngAcceptance]
                    X-Use = 0
                  X-Value = 1000                 mrad             ; acceptance
                    Y-Use = 0
                  Y-Value = 1000                 mrad             ; acceptance
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
-[S17_DriftSettings]
+[S19_DriftSettings]
                     Mode = 1                                     ; 4-finger, E-Quad 3, M-Quad 2, Stand 1, Beamline 0
               ShowLength = 0                                     ; I 3 / B 2 / Brho 1 / Length 0
 
@@ -4578,9 +4664,9 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
               ProdTarget = 0
 
 
-{============================= BLOCK S18 - Drift ======================================}
+{============================= BLOCK S20 - Drift ======================================}
 
-[S18_General]
+[S20_General]
                     Name = Drift after PL Long,1                 ; Name of Block, Constant name 1/0
                Available = 1
                   Length = 0.3                  m                ; Length block for optical blocks
@@ -4590,7 +4676,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
            CalculateAuto = 1                                     ; 0/1/2  nothing, keep_matrix, keep_field
         RemotePermission = 1
 
-[S18_slits]
+[S20_slits]
               SlitsShape = 1                                     ; 0-slits, 1-ellipse
            ApertureShape = 1                                     ; 0-slits, 1-ellipse
                 X_action = 0,0,0                                 ; Use 1/0, Show 1/0, UseApp 1/0
@@ -4599,7 +4685,7 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                   Y_size = 1,-120.00,-120.0,120.00,120.0         ; joint,Bottom,B-limit,Top,T-limit
          ApplyForMethods = 1, 1                                  ; Distribution, Ellipse
 
-[S18_optics]
+[S20_optics]
                     row1 = +1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row2 = +0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
                     row3 = +0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00
@@ -4607,14 +4693,14 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
                     row5 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00,+0.00000e+00
                     row6 = +0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+0.00000e+00,+1.00000e+00
 
-[S18_AngAcceptance]
+[S20_AngAcceptance]
                    X-Use = 0
                  X-Value = 1000                 mrad             ; acceptance
                    Y-Use = 0
                  Y-Value = 1000                 mrad             ; acceptance
                    Shape = 1                                     ; 0 - rectangle, 1- ellipse
 
-[S18_DriftSettings]
+[S20_DriftSettings]
                     Mode = 0                                     ; 4-finger, E-Quad 3, M-Quad 2, Stand 1, Beamline 0
               ShowLength = 0                                     ; I 3 / B 2 / Brho 1 / Length 0
 
@@ -4720,27 +4806,27 @@ Binding Energy for Vf/Vp = 8                    MeV              ; Binding energ
 {============================= Calculations ======================================}
 
 [Calculations]
-59V  23+ 23+ 23+ 23+ 23+ 23+ 23+ 23+ =7.2606e-08,7.2606e-08,0,7.2606e-08,2.3933e-04,2.5072e-04,9.8398e-13,2.8625e+02,6.7150e+00,7.9673e-01,1,1,1,1,7.9703e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8.6213e-01,8.6213e-01,1,1,1,1,1,1,1,1,8.2935e-05,8.2935e-05,1,1,1,9.2550e-01,1,1,1,1,9.2565e-01,1,1,1,1,1,1,1,5.6805e-07,5.6805e-07,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8606e-01,1,1,1,1,9.8606e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3.4852e-02,3.4852e-02,1,1,1,9.6959e-01,1,1,1,1,9.6959e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9818e-01,1,1,1,1,9.9818e-01,1,1,9.9510e-01,1,1,1,1,9.9510e-01,1,1,9.9848e-01,1,1,1,1,9.9848e-01,1,1,9.9818e-01,1,1,1,1,9.9818e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8608e-01,1,1,1,1,9.8608e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-58Ti 22+ 22+ 22+ 22+ 22+ 22+ 22+ 22+ =1.1350e-03,1.1350e-03,0,1.1350e-03,6.7266e-06,7.0465e-06,5.4727e-07,2.8794e+02,8.2871e+00,7.9763e-01,1,1,1,1,7.9784e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8774e-01,9.8774e-01,1,1,1,1,1,1,1,1,4.2488e-01,4.2488e-01,1,1,1,9.2607e-01,1,1,1,1,9.2620e-01,1,1,1,1,1,1,1,2.3166e-06,2.3166e-06,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8618e-01,1,1,1,1,9.8618e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8.0792e-01,8.0792e-01,1,1,1,9.6983e-01,1,1,1,1,9.6983e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9820e-01,1,1,1,1,9.9820e-01,1,1,9.9514e-01,1,1,1,1,9.9514e-01,1,1,9.9850e-01,1,1,1,1,9.9850e-01,1,1,9.9820e-01,1,1,1,1,9.9820e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8619e-01,1,1,1,1,9.8619e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-57Ti 22+ 22+ 22+ 22+ 22+ 22+ 22+ 22+ =7.6734e+01,7.6734e+01,0,7.6734e+01,5.3637e-05,5.6188e-05,4.6402e-03,2.8728e+02,7.4782e+00,7.9824e-01,1,1,1,1,7.9845e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.3351e-01,9.3351e-01,1,1,1,1,1,1,1,1,5.2247e-02,5.2247e-02,1,1,1,9.2658e-01,1,1,1,1,9.2670e-01,1,1,1,1,1,1,1,1.8532e-01,1.8532e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8629e-01,1,1,1,1,9.8629e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,7.3551e-01,7.3551e-01,1,1,1,9.7003e-01,1,1,1,1,9.7003e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9821e-01,1,1,1,1,9.9821e-01,1,1,9.9517e-01,1,1,1,1,9.9517e-01,1,1,9.9851e-01,1,1,1,1,9.9851e-01,1,1,9.9821e-01,1,1,1,1,9.9821e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8631e-01,1,1,1,1,9.8631e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-56Ti 22+ 22+ 22+ 22+ 22+ 22+ 22+ 22+ =1.3372e-01,1.3372e-01,0,1.3372e-01,3.9634e-04,4.1519e-04,1.0943e-06,2.8685e+02,7.5830e+00,7.9885e-01,1,1,1,1,7.9907e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,7.6913e-01,7.6913e-01,1,1,1,1,1,1,1,1,2.1458e-06,2.1458e-06,1,1,1,9.2709e-01,1,1,1,1,9.2720e-01,1,1,1,1,1,1,1,9.4833e-01,9.4833e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8641e-01,1,1,1,1,9.8641e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7024e-01,1,1,1,1,9.7024e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9822e-01,1,1,1,1,9.9822e-01,1,1,9.9521e-01,1,1,1,1,9.9521e-01,1,1,9.9852e-01,1,1,1,1,9.9852e-01,1,1,9.9822e-01,1,1,1,1,9.9822e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8642e-01,1,1,1,1,9.8642e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-57Sc 21+ 21+ 21+ 21+ 21+ 21+ 21+ 21+ =1.1835e-04,1.1835e-04,0,1.1835e-04,1.2995e-07,1.3613e-07,2.9541e-06,2.8937e+02,9.1334e+00,7.9852e-01,1,1,1,1,7.9867e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.2510e-01,9.2510e-01,1,1,1,9.2664e-01,1,1,1,1,9.2675e-01,1,1,1,1,1,1,1,4.7925e-06,4.7925e-06,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8630e-01,1,1,1,1,9.8630e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.5447e-01,9.5447e-01,1,1,1,9.7006e-01,1,1,1,1,9.7006e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9821e-01,1,1,1,1,9.9821e-01,1,1,9.9518e-01,1,1,1,1,9.9518e-01,1,1,9.9851e-01,1,1,1,1,9.9851e-01,1,1,9.9821e-01,1,1,1,1,9.9821e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8631e-01,1,1,1,1,9.8631e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-56Sc 21+ 21+ 21+ 21+ 21+ 21+ 21+ 21+ =4.8444e+01,4.8444e+01,0,4.8444e+01,1.3748e-06,1.4401e-06,1.1430e-01,2.8897e+02,9.2310e+00,7.9914e-01,1,1,1,1,7.9929e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9537e-01,9.9537e-01,1,1,1,1,1,1,1,1,6.6878e-01,6.6878e-01,1,1,1,9.2716e-01,1,1,1,1,9.2726e-01,1,1,1,1,1,1,1,2.5471e-01,2.5471e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8641e-01,1,1,1,1,9.8641e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.6356e-01,9.6356e-01,1,1,1,9.7027e-01,1,1,1,1,9.7027e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9822e-01,1,1,1,1,9.9822e-01,1,1,9.9521e-01,1,1,1,1,9.9521e-01,1,1,9.9852e-01,1,1,1,1,9.9852e-01,1,1,9.9822e-01,1,1,1,1,9.9822e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8643e-01,1,1,1,1,9.8643e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-55Sc 21+ 21+ 21+ 21+ 21+ 21+ 21+ 21+ =8.5483e+02,8.5483e+02,0,8.5483e+02,1.3265e-05,1.3896e-05,2.0902e-01,2.8851e+02,8.1201e+00,7.9976e-01,1,1,1,1,7.9991e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7363e-01,9.7363e-01,1,1,1,1,1,1,1,1,3.0720e-01,3.0720e-01,1,1,1,9.2768e-01,1,1,1,1,9.2777e-01,1,1,1,1,1,1,1,9.9717e-01,9.9717e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8653e-01,1,1,1,1,9.8653e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7048e-01,1,1,1,1,9.7048e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9824e-01,1,1,1,1,9.9824e-01,1,1,9.9525e-01,1,1,1,1,9.9525e-01,1,1,9.9853e-01,1,1,1,1,9.9853e-01,1,1,9.9824e-01,1,1,1,1,9.9824e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8654e-01,1,1,1,1,9.8654e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-54Sc 21+ 21+ 21+ 21+ 21+ 21+ 21+ 21+ =1.9126e+02,1.9126e+02,0,1.9126e+02,1.1353e-04,1.1893e-04,5.4646e-03,2.8786e+02,8.3902e+00,8.0038e-01,1,1,1,1,8.0054e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8.7098e-01,8.7098e-01,1,1,1,1,1,1,1,1,2.2941e-02,2.2941e-02,1,1,1,9.2821e-01,1,1,1,1,9.2829e-01,1,1,1,1,1,1,1,3.8957e-01,3.8957e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8665e-01,1,1,1,1,9.8665e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7069e-01,1,1,1,1,9.7069e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9825e-01,1,1,1,1,9.9825e-01,1,1,9.9528e-01,1,1,1,1,9.9528e-01,1,1,9.9855e-01,1,1,1,1,9.9855e-01,1,1,9.9825e-01,1,1,1,1,9.9825e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8666e-01,1,1,1,1,9.8666e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-56Ca 20+ 20+ 20+ 20+ 20+ 20+ 20+ 20+ =5.1086e-07,5.1086e-07,0,5.1086e-07,1.7343e-09,1.8168e-09,9.5541e-07,2.9093e+02,9.6706e+00,7.9941e-01,1,1,1,1,7.9951e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9803e-01,9.9803e-01,1,1,1,1,1,1,1,1,4.5722e-01,4.5722e-01,1,1,1,9.2722e-01,1,1,1,1,9.2731e-01,1,1,1,1,1,1,1,2.9923e-06,2.9923e-06,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8641e-01,1,1,1,1,9.8641e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7029e-01,1,1,1,1,9.7029e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9822e-01,1,1,1,1,9.9822e-01,1,1,9.9522e-01,1,1,1,1,9.9522e-01,1,1,9.9852e-01,1,1,1,1,9.9852e-01,1,1,9.9822e-01,1,1,1,1,9.9822e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8642e-01,1,1,1,1,9.8642e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-55Ca 20+ 20+ 20+ 20+ 20+ 20+ 20+ 20+ =1.0783e+00,1.0783e+00,0,1.0783e+00,2.3865e-08,2.5000e-08,1.4655e-01,2.9035e+02,9.9773e+00,8.0003e-01,1,1,1,1,8.0014e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,7.6606e-01,7.6606e-01,1,1,1,9.2774e-01,1,1,1,1,9.2783e-01,1,1,1,1,1,1,1,2.7351e-01,2.7351e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8652e-01,1,1,1,1,9.8652e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9783e-01,9.9783e-01,1,1,1,9.7050e-01,1,1,1,1,9.7050e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9824e-01,1,1,1,1,9.9824e-01,1,1,9.9525e-01,1,1,1,1,9.9525e-01,1,1,9.9853e-01,1,1,1,1,9.9853e-01,1,1,9.9824e-01,1,1,1,1,9.9824e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8654e-01,1,1,1,1,9.8654e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-54Ca 20+ 20+ 20+ 20+ 20+ 20+ 20+ 20+ =5.4284e+01,5.4284e+01,0,5.4284e+01,2.9476e-07,3.0878e-07,5.9734e-01,2.8995e+02,1.0089e+01,8.0066e-01,1,1,1,1,8.0077e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9848e-01,9.9848e-01,1,1,1,1,1,1,1,1,8.5439e-01,8.5439e-01,1,1,1,9.2827e-01,1,1,1,1,9.2834e-01,1,1,1,1,1,1,1,9.9696e-01,9.9696e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8664e-01,1,1,1,1,9.8664e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7072e-01,1,1,1,1,9.7072e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9825e-01,1,1,1,1,9.9825e-01,1,1,9.9529e-01,1,1,1,1,9.9529e-01,1,1,9.9855e-01,1,1,1,1,9.9855e-01,1,1,9.9825e-01,1,1,1,1,9.9825e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8666e-01,1,1,1,1,9.8666e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-53Ca 20+ 20+ 20+ 20+ 20+ 20+ 20+ 20+ =1.0667e+02,1.0667e+02,0,1.0667e+02,3.2471e-06,3.4015e-06,1.0656e-01,2.8950e+02,8.9477e+00,8.0130e-01,1,1,1,1,8.0140e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8937e-01,9.8937e-01,1,1,1,1,1,1,1,1,5.8150e-01,5.8150e-01,1,1,1,9.2880e-01,1,1,1,1,9.2887e-01,1,1,1,1,1,1,1,2.6324e-01,2.6324e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8677e-01,1,1,1,1,9.8677e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7094e-01,1,1,1,1,9.7094e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9827e-01,1,1,1,1,9.9827e-01,1,1,9.9532e-01,1,1,1,1,9.9532e-01,1,1,9.9856e-01,1,1,1,1,9.9856e-01,1,1,9.9827e-01,1,1,1,1,9.9827e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8678e-01,1,1,1,1,9.8678e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-52Ca 20+ 20+ 20+ 20+ 20+ 20+ 20+ 20+ =8.5760e-03,8.5760e-03,0,8.5760e-03,3.1659e-05,3.3164e-05,8.7864e-07,2.8907e+02,9.0500e+00,8.0194e-01,1,1,1,1,8.0204e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.3858e-01,9.3858e-01,1,1,1,1,1,1,1,1,2.1210e-01,2.1210e-01,1,1,1,9.2934e-01,1,1,1,1,9.2940e-01,1,1,1,1,1,1,1,6.2620e-06,6.2620e-06,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8689e-01,1,1,1,1,9.8689e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7116e-01,1,1,1,1,9.7116e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9829e-01,1,1,1,1,9.9829e-01,1,1,9.9536e-01,1,1,1,1,9.9536e-01,1,1,9.9857e-01,1,1,1,1,9.9857e-01,1,1,9.9829e-01,1,1,1,1,9.9829e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8690e-01,1,1,1,1,9.8690e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-54K  19+ 19+ 19+ 19+ 19+ 19+ 19+ 19+ =2.6777e-03,2.6777e-03,0,2.6777e-03,2.7442e-10,2.8747e-10,3.1649e-02,2.9190e+02,1.0635e+01,8.0093e-01,1,1,1,1,8.0100e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7347e-01,9.7347e-01,1,1,1,1,1,1,1,1,2.0877e-01,2.0877e-01,1,1,1,9.2833e-01,1,1,1,1,9.2840e-01,1,1,1,1,1,1,1,2.2163e-01,2.2163e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8665e-01,1,1,1,1,9.8665e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7074e-01,1,1,1,1,9.7074e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9825e-01,1,1,1,1,9.9825e-01,1,1,9.9530e-01,1,1,1,1,9.9530e-01,1,1,9.9855e-01,1,1,1,1,9.9855e-01,1,1,9.9825e-01,1,1,1,1,9.9825e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8666e-01,1,1,1,1,9.8666e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-53K  19+ 19+ 19+ 19+ 19+ 19+ 19+ 19+ =4.6718e-01,4.6718e-01,0,4.6718e-01,4.3348e-09,4.5409e-09,3.4957e-01,2.9152e+02,1.0695e+01,8.0157e-01,1,1,1,1,8.0164e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9686e-01,9.9686e-01,1,1,1,1,1,1,1,1,4.9982e-01,4.9982e-01,1,1,1,9.2886e-01,1,1,1,1,9.2893e-01,1,1,1,1,1,1,1,9.9670e-01,9.9670e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8677e-01,1,1,1,1,9.8677e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7096e-01,1,1,1,1,9.7096e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9827e-01,1,1,1,1,9.9827e-01,1,1,9.9533e-01,1,1,1,1,9.9533e-01,1,1,9.9856e-01,1,1,1,1,9.9856e-01,1,1,9.9827e-01,1,1,1,1,9.9827e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8678e-01,1,1,1,1,9.8678e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-52K  19+ 19+ 19+ 19+ 19+ 19+ 19+ 19+ =1.9589e+00,1.9589e+00,0,1.9589e+00,6.1330e-08,6.4247e-08,1.0360e-01,2.9091e+02,1.1024e+01,8.0221e-01,1,1,1,1,8.0229e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,7.7548e-01,7.7548e-01,1,1,1,9.2940e-01,1,1,1,1,9.2945e-01,1,1,1,1,1,1,1,1.9582e-01,1.9582e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8689e-01,1,1,1,1,9.8689e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.6823e-01,9.6823e-01,1,1,1,9.7118e-01,1,1,1,1,9.7118e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9829e-01,1,1,1,1,9.9829e-01,1,1,9.9536e-01,1,1,1,1,9.9536e-01,1,1,9.9857e-01,1,1,1,1,9.9857e-01,1,1,9.9829e-01,1,1,1,1,9.9829e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8690e-01,1,1,1,1,9.8690e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-51K  19+ 19+ 19+ 19+ 19+ 19+ 19+ 19+ =1.0625e-04,1.0625e-04,0,1.0625e-04,7.7061e-07,8.0727e-07,4.4722e-07,2.9046e+02,9.7863e+00,8.0286e-01,1,1,1,1,8.0293e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9610e-01,9.9610e-01,1,1,1,1,1,1,1,1,8.1434e-01,8.1434e-01,1,1,1,9.2994e-01,1,1,1,1,9.2999e-01,1,1,1,1,1,1,1,7.8500e-07,7.8500e-07,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8701e-01,1,1,1,1,9.8701e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9436e-01,9.9436e-01,1,1,1,9.7140e-01,1,1,1,1,9.7140e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9830e-01,1,1,1,1,9.9830e-01,1,1,9.9540e-01,1,1,1,1,9.9540e-01,1,1,9.9858e-01,1,1,1,1,9.9858e-01,1,1,9.9830e-01,1,1,1,1,9.9830e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8703e-01,1,1,1,1,9.8703e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-53Ar 18+ 18+ 18+ 18+ 18+ 18+ 18+ 18+ =6.0052e-08,6.0052e-08,0,6.0052e-08,2.0777e-12,2.1765e-12,9.3749e-05,2.9318e+02,1.1436e+01,8.0183e-01,1,1,1,1,8.0188e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6.7366e-01,6.7366e-01,1,1,1,1,1,1,1,1,2.0923e-03,2.0923e-03,1,1,1,9.2894e-01,1,1,1,1,9.2900e-01,1,1,1,1,1,1,1,9.4455e-02,9.4455e-02,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8677e-01,1,1,1,1,9.8677e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7099e-01,1,1,1,1,9.7099e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9827e-01,1,1,1,1,9.9827e-01,1,1,9.9534e-01,1,1,1,1,9.9534e-01,1,1,9.9856e-01,1,1,1,1,9.9856e-01,1,1,9.9827e-01,1,1,1,1,9.9827e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8679e-01,1,1,1,1,9.8679e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-52Ar 18+ 18+ 18+ 18+ 18+ 18+ 18+ 18+ =3.4302e-04,3.4302e-04,0,3.4302e-04,4.1961e-11,4.3957e-11,2.6515e-02,2.9282e+02,1.1542e+01,8.0248e-01,1,1,1,1,8.0253e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8.6998e-01,8.6998e-01,1,1,1,1,1,1,1,1,4.3338e-02,4.3338e-02,1,1,1,9.2947e-01,1,1,1,1,9.2952e-01,1,1,1,1,1,1,1,9.9696e-01,9.9696e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8689e-01,1,1,1,1,9.8689e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7121e-01,1,1,1,1,9.7121e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9829e-01,1,1,1,1,9.9829e-01,1,1,9.9537e-01,1,1,1,1,9.9537e-01,1,1,9.9857e-01,1,1,1,1,9.9857e-01,1,1,9.9829e-01,1,1,1,1,9.9829e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8690e-01,1,1,1,1,9.8690e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-51Ar 18+ 18+ 18+ 18+ 18+ 18+ 18+ 18+ =6.9398e-03,6.9398e-03,0,6.9398e-03,7.6037e-10,7.9654e-10,2.9603e-02,2.9246e+02,1.1661e+01,8.0313e-01,1,1,1,1,8.0318e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.6771e-01,9.6771e-01,1,1,1,1,1,1,1,1,2.5927e-01,2.5927e-01,1,1,1,9.3000e-01,1,1,1,1,9.3005e-01,1,1,1,1,1,1,1,1.8159e-01,1.8159e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8701e-01,1,1,1,1,9.8701e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.1951e-01,9.1951e-01,1,1,1,9.7143e-01,1,1,1,1,9.7143e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9830e-01,1,1,1,1,9.9830e-01,1,1,9.9541e-01,1,1,1,1,9.9541e-01,1,1,9.9858e-01,1,1,1,1,9.9858e-01,1,1,9.9830e-01,1,1,1,1,9.9830e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8703e-01,1,1,1,1,9.8703e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-50Ar 18+ 18+ 18+ 18+ 18+ 18+ 18+ 18+ =1.4226e-06,1.4226e-06,0,1.4226e-06,1.2289e-08,1.2873e-08,3.7548e-07,2.9207e+02,1.1789e+01,8.0379e-01,1,1,1,1,8.0384e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9541e-01,9.9541e-01,1,1,1,1,1,1,1,1,5.4098e-01,5.4098e-01,1,1,1,9.3055e-01,1,1,1,1,9.3059e-01,1,1,1,1,1,1,1,1.1138e-06,1.1138e-06,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8714e-01,1,1,1,1,9.8714e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8.8442e-01,8.8442e-01,1,1,1,9.7166e-01,1,1,1,1,9.7166e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9832e-01,1,1,1,1,9.9832e-01,1,1,9.9544e-01,1,1,1,1,9.9544e-01,1,1,9.9860e-01,1,1,1,1,9.9860e-01,1,1,9.9832e-01,1,1,1,1,9.9832e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8715e-01,1,1,1,1,9.8715e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-51Cl 17+ 17+ 17+ 17+ 17+ 17+ 17+ 17+ =6.3534e-09,6.3534e-09,0,6.3534e-09,2.6507e-13,2.7768e-13,7.7742e-05,2.9406e+02,1.2382e+01,8.0339e-01,1,1,1,1,8.0342e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4.1770e-01,4.1770e-01,1,1,1,1,1,1,1,1,2.6637e-04,2.6637e-04,1,1,1,9.3009e-01,1,1,1,1,9.3013e-01,1,1,1,1,1,1,1,9.8851e-01,9.8851e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8702e-01,1,1,1,1,9.8702e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7147e-01,1,1,1,1,9.7147e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9830e-01,1,1,1,1,9.9830e-01,1,1,9.9542e-01,1,1,1,1,9.9542e-01,1,1,9.9858e-01,1,1,1,1,9.9858e-01,1,1,9.9830e-01,1,1,1,1,9.9830e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8703e-01,1,1,1,1,9.8703e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-50Cl 17+ 17+ 17+ 17+ 17+ 17+ 17+ 17+ =1.2123e-06,1.2123e-06,0,1.2123e-06,6.1510e-12,6.4435e-12,6.3929e-04,2.9372e+02,1.2511e+01,8.0406e-01,1,1,1,1,8.0409e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6.6116e-01,6.6116e-01,1,1,1,1,1,1,1,1,5.0205e-03,5.0205e-03,1,1,1,9.3063e-01,1,1,1,1,9.3067e-01,1,1,1,1,1,1,1,3.2175e-01,3.2175e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8714e-01,1,1,1,1,9.8714e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8.4536e-01,8.4536e-01,1,1,1,9.7169e-01,1,1,1,1,9.7169e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9832e-01,1,1,1,1,9.9832e-01,1,1,9.9545e-01,1,1,1,1,9.9545e-01,1,1,9.9860e-01,1,1,1,1,9.9860e-01,1,1,9.9832e-01,1,1,1,1,9.9832e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8715e-01,1,1,1,1,9.8715e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-49Cl 17+ 17+ 17+ 17+ 17+ 17+ 17+ 17+ =1.7990e-09,1.7990e-09,0,1.7990e-09,1.2780e-10,1.3388e-10,4.5659e-08,2.9335e+02,1.2655e+01,8.0473e-01,1,1,1,1,8.0476e-01,1,1,1,1,1,1,1,1,1,1,1,9.9882e-01,1,1,9.9882e-01,1,8.5779e-01,8.5779e-01,1,1,1,1,1,1,1,1,7.3783e-02,7.3783e-02,1,1,1,9.3117e-01,1,1,1,1,9.3121e-01,1,1,1,1,1,1,1,1.5986e-06,1.5986e-06,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8726e-01,1,1,1,1,9.8726e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6.3628e-01,6.3628e-01,1,1,1,9.7191e-01,1,1,1,1,9.7191e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9833e-01,1,1,1,1,9.9833e-01,1,1,9.9549e-01,1,1,1,1,9.9549e-01,1,1,9.9861e-01,1,1,1,1,9.9861e-01,1,1,9.9833e-01,1,1,1,1,9.9833e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8728e-01,1,1,1,1,9.8728e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+59V  23+ 23+ 23+ 23+ 23+ 23+ 23+ 23+ =7.2649e-08,7.2649e-08,0,7.2649e-08,2.3933e-04,2.5072e-04,9.8456e-13,2.8625e+02,6.7150e+00,7.9673e-01,1,1,1,1,7.9703e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8.6210e-01,8.6210e-01,1,1,1,1,1,1,1,1,8.2769e-05,8.2769e-05,1,1,1,9.2550e-01,1,1,1,1,9.2565e-01,1,1,1,1,1,1,1,5.6989e-07,5.6989e-07,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8606e-01,1,1,1,1,9.8606e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3.4830e-02,3.4830e-02,1,1,1,9.6959e-01,1,1,1,1,9.6959e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9818e-01,1,1,1,1,9.9818e-01,1,1,9.9510e-01,1,1,1,1,9.9510e-01,1,1,9.9848e-01,1,1,1,1,9.9848e-01,1,1,9.9818e-01,1,1,1,1,9.9818e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8608e-01,1,1,1,1,9.8608e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+58Ti 22+ 22+ 22+ 22+ 22+ 22+ 22+ 22+ =1.1393e-03,1.1393e-03,0,1.1393e-03,6.7266e-06,7.0465e-06,5.4935e-07,2.8794e+02,8.2871e+00,7.9763e-01,1,1,1,1,7.9784e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8773e-01,9.8773e-01,1,1,1,1,1,1,1,1,4.2483e-01,4.2483e-01,1,1,1,9.2607e-01,1,1,1,1,9.2620e-01,1,1,1,1,1,1,1,2.3257e-06,2.3257e-06,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8618e-01,1,1,1,1,9.8618e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8.0792e-01,8.0792e-01,1,1,1,9.6983e-01,1,1,1,1,9.6983e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9820e-01,1,1,1,1,9.9820e-01,1,1,9.9514e-01,1,1,1,1,9.9514e-01,1,1,9.9850e-01,1,1,1,1,9.9850e-01,1,1,9.9820e-01,1,1,1,1,9.9820e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8619e-01,1,1,1,1,9.8619e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+57Ti 22+ 22+ 22+ 22+ 22+ 22+ 22+ 22+ =7.6740e+01,7.6740e+01,0,7.6740e+01,5.3637e-05,5.6188e-05,4.6406e-03,2.8728e+02,7.4782e+00,7.9824e-01,1,1,1,1,7.9845e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.3349e-01,9.3349e-01,1,1,1,1,1,1,1,1,5.2216e-02,5.2216e-02,1,1,1,9.2658e-01,1,1,1,1,9.2670e-01,1,1,1,1,1,1,1,1.8545e-01,1.8545e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8629e-01,1,1,1,1,9.8629e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,7.3550e-01,7.3550e-01,1,1,1,9.7003e-01,1,1,1,1,9.7003e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9821e-01,1,1,1,1,9.9821e-01,1,1,9.9517e-01,1,1,1,1,9.9517e-01,1,1,9.9851e-01,1,1,1,1,9.9851e-01,1,1,9.9821e-01,1,1,1,1,9.9821e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8631e-01,1,1,1,1,9.8631e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+56Ti 22+ 22+ 22+ 22+ 22+ 22+ 22+ 22+ =1.3233e-01,1.3233e-01,0,1.3233e-01,3.9634e-04,4.1519e-04,1.0830e-06,2.8685e+02,7.5830e+00,7.9885e-01,1,1,1,1,7.9907e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,7.6909e-01,7.6909e-01,1,1,1,1,1,1,1,1,2.1240e-06,2.1240e-06,1,1,1,9.2709e-01,1,1,1,1,9.2720e-01,1,1,1,1,1,1,1,9.4817e-01,9.4817e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8641e-01,1,1,1,1,9.8641e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7024e-01,1,1,1,1,9.7024e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9822e-01,1,1,1,1,9.9822e-01,1,1,9.9521e-01,1,1,1,1,9.9521e-01,1,1,9.9852e-01,1,1,1,1,9.9852e-01,1,1,9.9822e-01,1,1,1,1,9.9822e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8642e-01,1,1,1,1,9.8642e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+57Sc 21+ 21+ 21+ 21+ 21+ 21+ 21+ 21+ =1.1874e-04,1.1874e-04,0,1.1874e-04,1.2995e-07,1.3613e-07,2.9638e-06,2.8937e+02,9.1334e+00,7.9852e-01,1,1,1,1,7.9867e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.2509e-01,9.2509e-01,1,1,1,9.2664e-01,1,1,1,1,9.2675e-01,1,1,1,1,1,1,1,4.8083e-06,4.8083e-06,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8630e-01,1,1,1,1,9.8630e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.5445e-01,9.5445e-01,1,1,1,9.7006e-01,1,1,1,1,9.7006e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9821e-01,1,1,1,1,9.9821e-01,1,1,9.9518e-01,1,1,1,1,9.9518e-01,1,1,9.9851e-01,1,1,1,1,9.9851e-01,1,1,9.9821e-01,1,1,1,1,9.9821e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8631e-01,1,1,1,1,9.8631e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+56Sc 21+ 21+ 21+ 21+ 21+ 21+ 21+ 21+ =4.8476e+01,4.8476e+01,0,4.8476e+01,1.3748e-06,1.4401e-06,1.1437e-01,2.8897e+02,9.2310e+00,7.9914e-01,1,1,1,1,7.9929e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9537e-01,9.9537e-01,1,1,1,1,1,1,1,1,6.6873e-01,6.6873e-01,1,1,1,9.2716e-01,1,1,1,1,9.2726e-01,1,1,1,1,1,1,1,2.5490e-01,2.5490e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8641e-01,1,1,1,1,9.8641e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.6357e-01,9.6357e-01,1,1,1,9.7027e-01,1,1,1,1,9.7027e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9822e-01,1,1,1,1,9.9822e-01,1,1,9.9521e-01,1,1,1,1,9.9521e-01,1,1,9.9852e-01,1,1,1,1,9.9852e-01,1,1,9.9822e-01,1,1,1,1,9.9822e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8643e-01,1,1,1,1,9.8643e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+55Sc 21+ 21+ 21+ 21+ 21+ 21+ 21+ 21+ =8.5467e+02,8.5467e+02,0,8.5467e+02,1.3265e-05,1.3896e-05,2.0898e-01,2.8851e+02,8.1201e+00,7.9976e-01,1,1,1,1,7.9991e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7363e-01,9.7363e-01,1,1,1,1,1,1,1,1,3.0715e-01,3.0715e-01,1,1,1,9.2768e-01,1,1,1,1,9.2777e-01,1,1,1,1,1,1,1,9.9717e-01,9.9717e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8653e-01,1,1,1,1,9.8653e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7048e-01,1,1,1,1,9.7048e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9824e-01,1,1,1,1,9.9824e-01,1,1,9.9525e-01,1,1,1,1,9.9525e-01,1,1,9.9853e-01,1,1,1,1,9.9853e-01,1,1,9.9824e-01,1,1,1,1,9.9824e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8654e-01,1,1,1,1,9.8654e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+54Sc 21+ 21+ 21+ 21+ 21+ 21+ 21+ 21+ =1.9103e+02,1.9103e+02,0,1.9103e+02,1.1353e-04,1.1893e-04,5.4578e-03,2.8786e+02,8.3902e+00,8.0038e-01,1,1,1,1,8.0054e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8.7096e-01,8.7096e-01,1,1,1,1,1,1,1,1,2.2925e-02,2.2925e-02,1,1,1,9.2821e-01,1,1,1,1,9.2829e-01,1,1,1,1,1,1,1,3.8937e-01,3.8937e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8665e-01,1,1,1,1,9.8665e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7069e-01,1,1,1,1,9.7069e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9825e-01,1,1,1,1,9.9825e-01,1,1,9.9528e-01,1,1,1,1,9.9528e-01,1,1,9.9855e-01,1,1,1,1,9.9855e-01,1,1,9.9825e-01,1,1,1,1,9.9825e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8666e-01,1,1,1,1,9.8666e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+56Ca 20+ 20+ 20+ 20+ 20+ 20+ 20+ 20+ =5.1291e-07,5.1291e-07,0,5.1291e-07,1.7343e-09,1.8168e-09,9.5924e-07,2.9093e+02,9.6706e+00,7.9941e-01,1,1,1,1,7.9951e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9803e-01,9.9803e-01,1,1,1,1,1,1,1,1,4.5727e-01,4.5727e-01,1,1,1,9.2722e-01,1,1,1,1,9.2731e-01,1,1,1,1,1,1,1,3.0040e-06,3.0040e-06,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8641e-01,1,1,1,1,9.8641e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7029e-01,1,1,1,1,9.7029e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9822e-01,1,1,1,1,9.9822e-01,1,1,9.9522e-01,1,1,1,1,9.9522e-01,1,1,9.9852e-01,1,1,1,1,9.9852e-01,1,1,9.9822e-01,1,1,1,1,9.9822e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8642e-01,1,1,1,1,9.8642e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+55Ca 20+ 20+ 20+ 20+ 20+ 20+ 20+ 20+ =1.0791e+00,1.0791e+00,0,1.0791e+00,2.3865e-08,2.5000e-08,1.4666e-01,2.9035e+02,9.9773e+00,8.0003e-01,1,1,1,1,8.0014e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,7.6610e-01,7.6610e-01,1,1,1,9.2774e-01,1,1,1,1,9.2783e-01,1,1,1,1,1,1,1,2.7370e-01,2.7370e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8652e-01,1,1,1,1,9.8652e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9783e-01,9.9783e-01,1,1,1,9.7050e-01,1,1,1,1,9.7050e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9824e-01,1,1,1,1,9.9824e-01,1,1,9.9525e-01,1,1,1,1,9.9525e-01,1,1,9.9853e-01,1,1,1,1,9.9853e-01,1,1,9.9824e-01,1,1,1,1,9.9824e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8654e-01,1,1,1,1,9.8654e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+54Ca 20+ 20+ 20+ 20+ 20+ 20+ 20+ 20+ =5.4282e+01,5.4282e+01,0,5.4282e+01,2.9476e-07,3.0878e-07,5.9732e-01,2.8995e+02,1.0089e+01,8.0066e-01,1,1,1,1,8.0077e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9848e-01,9.9848e-01,1,1,1,1,1,1,1,1,8.5436e-01,8.5436e-01,1,1,1,9.2827e-01,1,1,1,1,9.2834e-01,1,1,1,1,1,1,1,9.9696e-01,9.9696e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8664e-01,1,1,1,1,9.8664e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7072e-01,1,1,1,1,9.7072e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9825e-01,1,1,1,1,9.9825e-01,1,1,9.9529e-01,1,1,1,1,9.9529e-01,1,1,9.9855e-01,1,1,1,1,9.9855e-01,1,1,9.9825e-01,1,1,1,1,9.9825e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8666e-01,1,1,1,1,9.8666e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+53Ca 20+ 20+ 20+ 20+ 20+ 20+ 20+ 20+ =1.0660e+02,1.0660e+02,0,1.0660e+02,3.2471e-06,3.4015e-06,1.0648e-01,2.8950e+02,8.9477e+00,8.0130e-01,1,1,1,1,8.0140e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8937e-01,9.8937e-01,1,1,1,1,1,1,1,1,5.8145e-01,5.8145e-01,1,1,1,9.2880e-01,1,1,1,1,9.2887e-01,1,1,1,1,1,1,1,2.6308e-01,2.6308e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8677e-01,1,1,1,1,9.8677e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7094e-01,1,1,1,1,9.7094e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9827e-01,1,1,1,1,9.9827e-01,1,1,9.9532e-01,1,1,1,1,9.9532e-01,1,1,9.9856e-01,1,1,1,1,9.9856e-01,1,1,9.9827e-01,1,1,1,1,9.9827e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8678e-01,1,1,1,1,9.8678e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+52Ca 20+ 20+ 20+ 20+ 20+ 20+ 20+ 20+ =8.5489e-03,8.5489e-03,0,8.5489e-03,3.1659e-05,3.3164e-05,8.7586e-07,2.8907e+02,9.0500e+00,8.0194e-01,1,1,1,1,8.0204e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.3857e-01,9.3857e-01,1,1,1,1,1,1,1,1,2.1205e-01,2.1205e-01,1,1,1,9.2934e-01,1,1,1,1,9.2940e-01,1,1,1,1,1,1,1,6.2437e-06,6.2437e-06,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8689e-01,1,1,1,1,9.8689e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7116e-01,1,1,1,1,9.7116e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9829e-01,1,1,1,1,9.9829e-01,1,1,9.9536e-01,1,1,1,1,9.9536e-01,1,1,9.9857e-01,1,1,1,1,9.9857e-01,1,1,9.9829e-01,1,1,1,1,9.9829e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8690e-01,1,1,1,1,9.8690e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+54K  19+ 19+ 19+ 19+ 19+ 19+ 19+ 19+ =2.6804e-03,2.6804e-03,0,2.6804e-03,2.7442e-10,2.8747e-10,3.1681e-02,2.9190e+02,1.0635e+01,8.0093e-01,1,1,1,1,8.0100e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7347e-01,9.7347e-01,1,1,1,1,1,1,1,1,2.0881e-01,2.0881e-01,1,1,1,9.2833e-01,1,1,1,1,9.2840e-01,1,1,1,1,1,1,1,2.2181e-01,2.2181e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8665e-01,1,1,1,1,9.8665e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7074e-01,1,1,1,1,9.7074e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9825e-01,1,1,1,1,9.9825e-01,1,1,9.9530e-01,1,1,1,1,9.9530e-01,1,1,9.9855e-01,1,1,1,1,9.9855e-01,1,1,9.9825e-01,1,1,1,1,9.9825e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8666e-01,1,1,1,1,9.8666e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+53K  19+ 19+ 19+ 19+ 19+ 19+ 19+ 19+ =4.6722e-01,4.6722e-01,0,4.6722e-01,4.3348e-09,4.5409e-09,3.4960e-01,2.9152e+02,1.0695e+01,8.0157e-01,1,1,1,1,8.0164e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9686e-01,9.9686e-01,1,1,1,1,1,1,1,1,4.9986e-01,4.9986e-01,1,1,1,9.2886e-01,1,1,1,1,9.2893e-01,1,1,1,1,1,1,1,9.9670e-01,9.9670e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8677e-01,1,1,1,1,9.8677e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7096e-01,1,1,1,1,9.7096e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9827e-01,1,1,1,1,9.9827e-01,1,1,9.9533e-01,1,1,1,1,9.9533e-01,1,1,9.9856e-01,1,1,1,1,9.9856e-01,1,1,9.9827e-01,1,1,1,1,9.9827e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8678e-01,1,1,1,1,9.8678e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+52K  19+ 19+ 19+ 19+ 19+ 19+ 19+ 19+ =1.9575e+00,1.9575e+00,0,1.9575e+00,6.1330e-08,6.4247e-08,1.0352e-01,2.9091e+02,1.1024e+01,8.0221e-01,1,1,1,1,8.0229e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,7.7551e-01,7.7551e-01,1,1,1,9.2940e-01,1,1,1,1,9.2945e-01,1,1,1,1,1,1,1,1.9567e-01,1.9567e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8689e-01,1,1,1,1,9.8689e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.6823e-01,9.6823e-01,1,1,1,9.7118e-01,1,1,1,1,9.7118e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9829e-01,1,1,1,1,9.9829e-01,1,1,9.9536e-01,1,1,1,1,9.9536e-01,1,1,9.9857e-01,1,1,1,1,9.9857e-01,1,1,9.9829e-01,1,1,1,1,9.9829e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8690e-01,1,1,1,1,9.8690e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+51K  19+ 19+ 19+ 19+ 19+ 19+ 19+ 19+ =1.0594e-04,1.0594e-04,0,1.0594e-04,7.7061e-07,8.0727e-07,4.4588e-07,2.9046e+02,9.7863e+00,8.0286e-01,1,1,1,1,8.0293e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9610e-01,9.9610e-01,1,1,1,1,1,1,1,1,8.1430e-01,8.1430e-01,1,1,1,9.2994e-01,1,1,1,1,9.2999e-01,1,1,1,1,1,1,1,7.8269e-07,7.8269e-07,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8701e-01,1,1,1,1,9.8701e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9437e-01,9.9437e-01,1,1,1,9.7140e-01,1,1,1,1,9.7140e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9830e-01,1,1,1,1,9.9830e-01,1,1,9.9540e-01,1,1,1,1,9.9540e-01,1,1,9.9858e-01,1,1,1,1,9.9858e-01,1,1,9.9830e-01,1,1,1,1,9.9830e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8703e-01,1,1,1,1,9.8703e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+53Ar 18+ 18+ 18+ 18+ 18+ 18+ 18+ 18+ =6.0148e-08,6.0148e-08,0,6.0148e-08,2.0777e-12,2.1765e-12,9.3898e-05,2.9318e+02,1.1436e+01,8.0183e-01,1,1,1,1,8.0188e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6.7369e-01,6.7369e-01,1,1,1,1,1,1,1,1,2.0932e-03,2.0932e-03,1,1,1,9.2894e-01,1,1,1,1,9.2900e-01,1,1,1,1,1,1,1,9.4560e-02,9.4560e-02,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8677e-01,1,1,1,1,9.8677e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7099e-01,1,1,1,1,9.7099e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9827e-01,1,1,1,1,9.9827e-01,1,1,9.9534e-01,1,1,1,1,9.9534e-01,1,1,9.9856e-01,1,1,1,1,9.9856e-01,1,1,9.9827e-01,1,1,1,1,9.9827e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8679e-01,1,1,1,1,9.8679e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+52Ar 18+ 18+ 18+ 18+ 18+ 18+ 18+ 18+ =3.4315e-04,3.4315e-04,0,3.4315e-04,4.1961e-11,4.3957e-11,2.6525e-02,2.9282e+02,1.1542e+01,8.0248e-01,1,1,1,1,8.0253e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8.7000e-01,8.7000e-01,1,1,1,1,1,1,1,1,4.3354e-02,4.3354e-02,1,1,1,9.2947e-01,1,1,1,1,9.2952e-01,1,1,1,1,1,1,1,9.9695e-01,9.9695e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8689e-01,1,1,1,1,9.8689e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7121e-01,1,1,1,1,9.7121e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9829e-01,1,1,1,1,9.9829e-01,1,1,9.9537e-01,1,1,1,1,9.9537e-01,1,1,9.9857e-01,1,1,1,1,9.9857e-01,1,1,9.9829e-01,1,1,1,1,9.9829e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8690e-01,1,1,1,1,9.8690e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+51Ar 18+ 18+ 18+ 18+ 18+ 18+ 18+ 18+ =6.9355e-03,6.9355e-03,0,6.9355e-03,7.6037e-10,7.9654e-10,2.9585e-02,2.9246e+02,1.1661e+01,8.0313e-01,1,1,1,1,8.0318e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.6772e-01,9.6772e-01,1,1,1,1,1,1,1,1,2.5931e-01,2.5931e-01,1,1,1,9.3000e-01,1,1,1,1,9.3005e-01,1,1,1,1,1,1,1,1.8145e-01,1.8145e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8701e-01,1,1,1,1,9.8701e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.1949e-01,9.1949e-01,1,1,1,9.7143e-01,1,1,1,1,9.7143e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9830e-01,1,1,1,1,9.9830e-01,1,1,9.9541e-01,1,1,1,1,9.9541e-01,1,1,9.9858e-01,1,1,1,1,9.9858e-01,1,1,9.9830e-01,1,1,1,1,9.9830e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8703e-01,1,1,1,1,9.8703e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+50Ar 18+ 18+ 18+ 18+ 18+ 18+ 18+ 18+ =1.4175e-06,1.4175e-06,0,1.4175e-06,1.2289e-08,1.2873e-08,3.7414e-07,2.9207e+02,1.1789e+01,8.0379e-01,1,1,1,1,8.0384e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9541e-01,9.9541e-01,1,1,1,1,1,1,1,1,5.4102e-01,5.4102e-01,1,1,1,9.3055e-01,1,1,1,1,9.3059e-01,1,1,1,1,1,1,1,1.1097e-06,1.1097e-06,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8714e-01,1,1,1,1,9.8714e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8.8442e-01,8.8442e-01,1,1,1,9.7166e-01,1,1,1,1,9.7166e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9832e-01,1,1,1,1,9.9832e-01,1,1,9.9544e-01,1,1,1,1,9.9544e-01,1,1,9.9860e-01,1,1,1,1,9.9860e-01,1,1,9.9832e-01,1,1,1,1,9.9832e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8715e-01,1,1,1,1,9.8715e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+51Cl 17+ 17+ 17+ 17+ 17+ 17+ 17+ 17+ =6.3564e-09,6.3564e-09,0,6.3564e-09,2.6507e-13,2.7768e-13,7.7779e-05,2.9406e+02,1.2382e+01,8.0339e-01,1,1,1,1,8.0342e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4.1773e-01,4.1773e-01,1,1,1,1,1,1,1,1,2.6647e-04,2.6647e-04,1,1,1,9.3009e-01,1,1,1,1,9.3013e-01,1,1,1,1,1,1,1,9.8853e-01,9.8853e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8702e-01,1,1,1,1,9.8702e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.7147e-01,1,1,1,1,9.7147e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9830e-01,1,1,1,1,9.9830e-01,1,1,9.9542e-01,1,1,1,1,9.9542e-01,1,1,9.9858e-01,1,1,1,1,9.9858e-01,1,1,9.9830e-01,1,1,1,1,9.9830e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8703e-01,1,1,1,1,9.8703e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+50Cl 17+ 17+ 17+ 17+ 17+ 17+ 17+ 17+ =1.2120e-06,1.2120e-06,0,1.2120e-06,6.1510e-12,6.4435e-12,6.3912e-04,2.9372e+02,1.2511e+01,8.0406e-01,1,1,1,1,8.0409e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6.6119e-01,6.6119e-01,1,1,1,1,1,1,1,1,5.0224e-03,5.0224e-03,1,1,1,9.3063e-01,1,1,1,1,9.3067e-01,1,1,1,1,1,1,1,3.2155e-01,3.2155e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8714e-01,1,1,1,1,9.8714e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,8.4530e-01,8.4530e-01,1,1,1,9.7169e-01,1,1,1,1,9.7169e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9832e-01,1,1,1,1,9.9832e-01,1,1,9.9545e-01,1,1,1,1,9.9545e-01,1,1,9.9860e-01,1,1,1,1,9.9860e-01,1,1,9.9832e-01,1,1,1,1,9.9832e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8715e-01,1,1,1,1,9.8715e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+49Cl 17+ 17+ 17+ 17+ 17+ 17+ 17+ 17+ =1.7946e-09,1.7946e-09,0,1.7946e-09,1.2780e-10,1.3388e-10,4.5548e-08,2.9335e+02,1.2655e+01,8.0473e-01,1,1,1,1,8.0476e-01,1,1,1,1,1,1,1,1,1,1,1,9.9882e-01,1,1,9.9882e-01,1,8.5781e-01,8.5781e-01,1,1,1,1,1,1,1,1,7.3803e-02,7.3803e-02,1,1,1,9.3117e-01,1,1,1,1,9.3121e-01,1,1,1,1,1,1,1,1.5942e-06,1.5942e-06,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8726e-01,1,1,1,1,9.8726e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6.3628e-01,6.3628e-01,1,1,1,9.7191e-01,1,1,1,1,9.7191e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.9833e-01,1,1,1,1,9.9833e-01,1,1,9.9549e-01,1,1,1,1,9.9549e-01,1,1,9.9861e-01,1,1,1,1,9.9861e-01,1,1,9.9833e-01,1,1,1,1,9.9833e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9.8728e-01,1,1,1,1,9.8728e-01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
